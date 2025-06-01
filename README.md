@@ -10,4 +10,7 @@ This repository is created mainly to prepare for target career path to be a prof
 - The Construct Robotics Institute: [Link](https://www.theconstruct.ai/)
 
 ## Space AI/Robotics related Thesis proposal
-- Thesis proposal in AI and Space Crop Production: [File](./thesis_proposals/phd_proposal_ISAE.pdf)
+- Thesis proposal in AI and Space Crop Production: [File](./pdfs/phd_proposal_ISAE.pdf)
+
+## Useful documents about Space Robotics
+- Report on Robotics Technology for NASA's Planetary Science Exploration [File](https://www1.grc.nasa.gov/wp-content/uploads/PESTO_Robotics_Technology_Needs_March_2024_2.pdf)
