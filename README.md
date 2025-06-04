@@ -6,6 +6,9 @@ This repository is created mainly to prepare for target career path to be a prof
 - @EPFLeSpace: eSpace Webinar – Space Robots: The Frontiers of Exploration: [Link](https://youtu.be/OsWsGtvZGSs?si=93s65_Qr94Nfp_qT)
 - @leggedrobotics: Space robotic playlists: [Link](https://www.youtube.com/playlist?list=PLE-BQwvVGf8EOpuaw6CUVULJAa4JwrC7X)
 
+## Space Robotics Courses
+- Robotics in Space: [Link](https://roboticsinspace.tech/)
+
 ## Where to learn Robotics
 - The Construct Robotics Institute: [Link](https://www.theconstruct.ai/)
 
