@@ -12,6 +12,9 @@ This repository is created mainly to prepare for target career path to be a prof
 ## Where to learn Robotics
 - The Construct Robotics Institute: [Link](https://www.theconstruct.ai/)
 
+## Where to learn about Space
+- Space Resources from ETHOS SPACE: [Link](https://ethos-space.com/)
+
 ## Space AI/Robotics related Thesis proposal
 - Thesis proposal in AI and Space Crop Production: [File](./pdfs/phd_proposal_ISAE.pdf)
 
