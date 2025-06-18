@@ -11,6 +11,7 @@ This repository is created mainly to prepare for target career path to be a prof
 
 ## Where to learn Robotics
 - The Construct Robotics Institute: [Link](https://www.theconstruct.ai/)
+- HuggingFace Lerobot: [Link](https://huggingface.co/docs/lerobot/index)
 
 ## Where to learn about Space
 - Space Resources from ETHOS SPACE: [Link](https://ethos-space.com/)
