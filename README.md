@@ -15,6 +15,7 @@ This repository is created mainly to prepare for target career path to be a prof
 
 ## Where to learn about Space
 - Space Resources from ETHOS SPACE: [Link](https://ethos-space.com/)
+- Space Mission Design and Operations from EPFL: [Link](https://learning.edx.org/course/course-v1:EPFLx+EE585x+1T2021/home)
 
 ## Space AI/Robotics related Thesis proposal
 - Thesis proposal in AI and Space Crop Production: [File](./pdfs/phd_proposal_ISAE.pdf)
