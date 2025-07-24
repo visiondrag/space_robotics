@@ -22,3 +22,4 @@ This repository is created mainly to prepare for target career path to be a prof
 
 ## Useful documents about Space Robotics
 - Report on Robotics Technology for NASA's Planetary Science Exploration [File](https://www1.grc.nasa.gov/wp-content/uploads/PESTO_Robotics_Technology_Needs_March_2024_2.pdf)
+- The Commercial Lunar Economy Field Guide [File](https://www.airuniversity.af.edu/Portals/10/AUPress/Books/B-186_Nayak_Lunar_Economy_Field_Guide.2.pdf)
