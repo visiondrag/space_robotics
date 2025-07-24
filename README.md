@@ -8,6 +8,8 @@ This repository is created mainly to prepare for target career path to be a prof
 
 ## Space Robotics Courses
 - Robotics in Space: [Link](https://roboticsinspace.tech/)
+- Space Rover and Robotics: [Link](https://skyline-space.com/rar/)
+- CubeSats and Satellites: [Link](https://skyline-space.com/cas/)
 
 ## Where to learn Robotics
 - The Construct Robotics Institute: [Link](https://www.theconstruct.ai/)
@@ -16,10 +18,10 @@ This repository is created mainly to prepare for target career path to be a prof
 ## Where to learn about Space
 - Space Resources from ETHOS SPACE: [Link](https://ethos-space.com/)
 - Space Mission Design and Operations from EPFL: [Link](https://learning.edx.org/course/course-v1:EPFLx+EE585x+1T2021/home)
+- The Commercial Lunar Economy Field Guide [File](https://www.airuniversity.af.edu/Portals/10/AUPress/Books/B-186_Nayak_Lunar_Economy_Field_Guide.2.pdf)
 
 ## Space AI/Robotics related Thesis proposal
 - Thesis proposal in AI and Space Crop Production: [File](./pdfs/phd_proposal_ISAE.pdf)
 
 ## Useful documents about Space Robotics
 - Report on Robotics Technology for NASA's Planetary Science Exploration [File](https://www1.grc.nasa.gov/wp-content/uploads/PESTO_Robotics_Technology_Needs_March_2024_2.pdf)
-- The Commercial Lunar Economy Field Guide [File](https://www.airuniversity.af.edu/Portals/10/AUPress/Books/B-186_Nayak_Lunar_Economy_Field_Guide.2.pdf)
