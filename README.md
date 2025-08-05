@@ -1,6 +1,7 @@
-# Space Robotics Learning
-This repository is created mainly to prepare for target career path to be a professional in Space Robotics.
+# Space Robotics
+This repository is created mainly to store and share resources for those who want to become a professional in Space Robotics (including me).
 
+![Alt Text](assets/futuristic_mars_vehicle.png)
 
 ## Space Robotics Overview videos
 - @EPFLeSpace: eSpace Webinar – Space Robots: The Frontiers of Exploration: [Link](https://youtu.be/OsWsGtvZGSs?si=93s65_Qr94Nfp_qT)
@@ -30,3 +31,4 @@ This repository is created mainly to prepare for target career path to be a prof
 
 ## Useful documents about Space Robotics
 - Report on Robotics Technology for NASA's Planetary Science Exploration: [Link](https://www1.grc.nasa.gov/wp-content/uploads/PESTO_Robotics_Technology_Needs_March_2024_2.pdf)
+- ASTROBOTIC LUNAR LANDERS Payload User’s Guide: [Link](https://www.astrobotic.com/wp-content/uploads/2022/01/PUGLanders_011222.pdf)
