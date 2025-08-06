@@ -32,3 +32,4 @@ This repository is created mainly to store and share resources for those who wan
 ## Useful documents about Space Robotics
 - Report on Robotics Technology for NASA's Planetary Science Exploration: [Link](https://www1.grc.nasa.gov/wp-content/uploads/PESTO_Robotics_Technology_Needs_March_2024_2.pdf)
 - ASTROBOTIC LUNAR LANDERS Payload User’s Guide: [Link](https://www.astrobotic.com/wp-content/uploads/2022/01/PUGLanders_011222.pdf)
+- Careers in space: Be part of Australia’s space workforce: [File](pdfs/careers-in-space-booklet.pdf.pdf)
