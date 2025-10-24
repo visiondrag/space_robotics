@@ -34,3 +34,6 @@ This repository is created mainly to store and share resources for those who wan
 - ASTROBOTIC LUNAR LANDERS Payload User’s Guide: [Link](https://www.astrobotic.com/wp-content/uploads/2022/01/PUGLanders_011222.pdf)
 - Careers in space: Be part of Australia’s space workforce: [File](pdfs/careers-in-space-booklet.pdf.pdf)
 - Cool Earth data: [Link](https://search.earthdata.nasa.gov/)
+
+## Super useful papers for literature review
+[PAPERS.md](PAPERS.md)
