@@ -12,3 +12,4 @@ Ground Robot Indoor Localization and Mapping: [File](papers/2506.14178v1.pdf) - 
 ## Lunar exploration
 
 - Lunar Twins: We Choose to Go to the Moon with Large Language Models: [File](papers/2025.findings-acl.69.pdf) - [Link](https://aclanthology.org/2025.findings-acl.69.pdf)
+- LuSNAR:A Lunar Segmentation, Navigation and Reconstruction Dataset based on Multi-sensor for Autonomous Exploration: [File](papers/2407.06512v2.pdf) - [Link](https://arxiv.org/pdf/2407.06512v2)
