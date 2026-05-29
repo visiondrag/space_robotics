@@ -1,7 +1,7 @@
 # Space Robotics
 This repository is created mainly to store and share resources for those who want to become a professional in Space Robotics (including me).
 
-![Alt Text](assets/futuristic_mars_vehicle.png)
+![Alt Text](assets/futuristic_interplanetary_system.png)
 
 ## Space Robotics Overview videos
 - @EPFLeSpace: eSpace Webinar – Space Robots: The Frontiers of Exploration: [Link](https://youtu.be/OsWsGtvZGSs?si=93s65_Qr94Nfp_qT)
