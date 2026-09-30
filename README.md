@@ -14,7 +14,7 @@ A curated, community-editable collection of resources for anyone who wants to be
 | Section | What you'll find |
 |---|---|
 | [Learning](docs/learning/README.md) | Videos, courses, books, robotics and space fundamentals |
-| [Papers](docs/papers/README.md) | About 60 papers in 9 topics: terrain perception, rover autonomy, lunar SLAM, planetary VLMs, in-orbit manipulation, flight software |
+| [Papers](docs/papers/README.md) | About 50 papers in 9 topics: terrain perception, rover autonomy, lunar SLAM, planetary VLMs, in-orbit manipulation, flight software |
 | [Datasets](datasets/README.md) | Mars, Moon and analog-field datasets with task and size |
 | [Tools](docs/tools/README.md) | OmniLRS, Isaac Sim, Gazebo, Space ROS, cFS, F Prime, SPICE, data portals |
 | [Missions & reports](docs/missions-and-reports/README.md) | NASA/ESA reports, mission documents, careers |
