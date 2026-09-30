@@ -5,9 +5,9 @@ Datasets for planetary perception and navigation, sorted by body. Check each dat
 ## Mars
 | Name | Data | Task | Details |
 |---|---|---|---|
-| AI4Mars | Rover images (NASA) | Terrain-aware segmentation | [mars/AI4Mars.md](mars/AI4Mars.md) |
-| MarsScapes | Rover scenes | Segmentation | [mars/MarsScapes.md](mars/MarsScapes.md) |
-| S5Mars | Rover images | Semi-supervised segmentation | [mars/S5Mars.md](mars/S5Mars.md) |
+| AI4Mars | About 35,000 rover images (Curiosity, Opportunity, Spirit), 4 terrain classes | Terrain-aware segmentation | [mars/AI4Mars.md](mars/AI4Mars.md) |
+| MarsScapes | 195 panoramas, 9 classes | Semantic and instance segmentation | [mars/MarsScapes.md](mars/MarsScapes.md) |
+| S5Mars | 6K high-resolution images, sparse labels | Semi-supervised segmentation | [mars/S5Mars.md](mars/S5Mars.md) |
 | Curiosity surface images | Curiosity images | Classification | [mars/Curiosity_surface_images.md](mars/Curiosity_surface_images.md) |
 | Mars32K | 32,368 unlabeled Curiosity Mastcam colour images (2012–2018) | Self-supervised / clustering | [mars/Mars32k_MarsData_Mars-Bench.md](mars/Mars32k_MarsData_Mars-Bench.md) |
 | MarsData-V2 | 8,390 labeled 512×512 Mastcam images | Rock segmentation | [mars/Mars32k_MarsData_Mars-Bench.md](mars/Mars32k_MarsData_Mars-Bench.md) |

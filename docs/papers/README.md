@@ -1,17 +1,18 @@
 # Papers
 
-Curated literature for space robotics, grouped by topic. Entries marked **File** have a local copy in [`library/papers/`](../../library/papers/); the rest are links only. Many recent entries are preprints and have not been peer reviewed. See [CONTRIBUTING.md](../../CONTRIBUTING.md) to add one.
+Curated literature for space robotics, grouped by topic. Entries marked **File** have a local copy in [`library/papers/`](../../library/papers/); the rest are links only (IEEE papers are not redistributed). Many recent entries are preprints and have not been peer reviewed. See [CONTRIBUTING.md](../../CONTRIBUTING.md) to add one.
 
 **Suggested reading order for newcomers:** the flight software paper (Space ROS) and the Perseverance autonomy article for the big picture, then the terrain traversability section, then the survey of on-orbit servicing manipulators.
 
 Local PDFs live in [`library/papers/`](../../library/papers/). Add new entries in the format: title — why it matters — file / link.
 
 ## Terrain traversability
+Local copies exist only for freely redistributable papers; IEEE papers are link-only.
 - On terrain traversability analysis in unstructured environments: recent advances in forest applications: [File](../../library/papers/Terrain_Traversability_Forest_Review_2025.pdf) - [Link](https://link.springer.com/article/10.1007/s11370-025-00591-4)
 - TACS-Graphs: Traversability-Aware Consistent Scene Graphs for Ground Robot Indoor Localization and Mapping: [File](../../library/papers/TACS-Graphs_2025.pdf) - [Link](https://arxiv.org/abs/2506.14178)
-- Stereo Vision and Rover Navigation Software for Planetary Exploration: [File](../../library/papers/Stereo_Vision_Rover_Navigation.pdf) - [Link](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1035370)
-- Visual Traversability Analysis for Micro Planetary Rover: [File](../../library/papers/Visual_Traversability_Micro_Planetary_Rover.pdf) - [Link](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5420494)
-- Soft Computing for Visual Terrain Perception and Traversability Assessment by Planetary Robotic Systems: [File](../../library/papers/Soft_Computing_Terrain_Perception_Planetary_Robots.pdf) - [Link](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1571416)
+- Stereo Vision and Rover Navigation Software for Planetary Exploration: [Link](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1035370)
+- Visual Traversability Analysis for Micro Planetary Rover: [Link](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5420494)
+- Soft Computing for Visual Terrain Perception and Traversability Assessment by Planetary Robotic Systems: [Link](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1571416)
 
 ## Lunar exploration
 - Lunar Twins: We Choose to Go to the Moon with Large Language Models: [File](../../library/papers/Lunar_Twins_LLMs_2025.pdf) - [Link](https://aclanthology.org/2025.findings-acl.69.pdf)
@@ -65,6 +66,46 @@ Local PDFs live in [`library/papers/`](../../library/papers/). Add new entries i
 - Leveraging Procedural Generation for Learning Autonomous Peg-in-Hole Assembly in Space: [Link](https://arxiv.org/pdf/2405.01134)
 - APIARY: Autonomous Planning In-space Assembly Reinforcement-learning free-flYer, ISS Astrobee testing: [Link](https://arxiv.org/pdf/2512.03729)
 - SmallSatSim: A GPU-Accelerated Microgravity Robotics Toolkit for Planning, Control, and Policy Learning: [Link](https://arxiv.org/pdf/2603.14598)
+
+## Legged, jumping and cave robots
+- Martian Lava Tube Exploration Using Jumping Legged Robots: A Concept Study: [Link](https://arxiv.org/abs/2310.14876)
+- Design and Experimental Verification of a Jumping Legged Robot for Martian Lava Tube Exploration: [Link](https://arxiv.org/abs/2311.03854)
+- Olympus: A Jumping Quadruped for Planetary Exploration Utilizing Reinforcement Learning for In-Flight Attitude Control: [Link](https://arxiv.org/pdf/2503.03574)
+- Efficient Learning-Based Control of a Legged Robot in Lunar Gravity: [Link](https://arxiv.org/pdf/2509.10128)
+- Locomotion as Manipulation with ReachBot (extendable booms for caves and lava tubes): [Link](https://arxiv.org/html/2407.00973)
+- Cooperative robotic exploration of a planetary skylight surface and lava cave (Science Robotics): [Link](https://www.science.org/doi/10.1126/scirobotics.adj9699)
+
+## Asteroids and small bodies
+- Mobility and Science operations On An Asteroid Using a Hopping Small Spacecraft on Stilts: [Link](https://arxiv.org/pdf/1801.09482)
+- Planning and Navigation of Climbing Robots in Low-Gravity Environments: [Link](https://arxiv.org/pdf/1803.05601)
+- Path planning for asteroid hopping rovers with pre-trained deep reinforcement learning architectures (Acta Astronautica): [Link](https://www.sciencedirect.com/science/article/abs/pii/S0094576520301351)
+- Micro-hopping robot for asteroid exploration (Acta Astronautica, classic): [Link](https://www.sciencedirect.com/science/article/abs/pii/S0094576502001868)
+
+## Sampling, drilling and excavation (ISRU)
+- Learning Tool-Aware Adaptive Compliant Control for Autonomous Regolith Excavation: [Link](https://arxiv.org/abs/2509.05475)
+- Autonomous Multirobot Excavation for Lunar Applications: [Link](https://arxiv.org/pdf/1701.01657)
+- An Information Theoretic Approach to Sample Acquisition and Perception in Planetary Robotics: [Link](https://arxiv.org/pdf/1709.04617)
+- Learning and Autonomy for Extraterrestrial Terrain Sampling: An Experience Report from OWLAT Deployment: [Link](https://arxiv.org/pdf/2311.17405)
+- A multi-string and wireline-coring drilling robot for planetary regolith sampling: [Link](https://www.sciencedirect.com/science/article/abs/pii/S0273117725000870)
+
+## Teleoperation, shared autonomy and human-robot teaming
+- Human-Robot Teaming Strategy for Fast Teleoperation of a Lunar Resource Exploration Rover (ISAIRAS 2020): [Link](https://www.hou.usra.edu/meetings/isairas2020fullpapers/pdf/5092.pdf)
+- Supervising Remote Humanoids Across Intermediate Time Delay (NASA): [Link](https://ntrs.nasa.gov/api/citations/20060051886/downloads/20060051886.pdf)
+- Shared control on lunar spacecraft teleoperation rendezvous operations with large time delay: [Link](https://www.sciencedirect.com/science/article/abs/pii/S0094576516304751)
+- Effect of time-delay on lunar sampling tele-operations: cardiac, ocular and behavioral measures: [Link](https://www.sciencedirect.com/science/article/abs/pii/S0003687022002332)
+- Long range teleoperation for fine manipulation tasks under time-delay network conditions: [Link](https://arxiv.org/pdf/1903.09189)
+- Advancing the Scientific Frontier with Increasingly Autonomous Systems: [Link](https://arxiv.org/pdf/2009.07363)
+
+## Space debris and active debris removal
+- Review of Autonomous Space Robotic Manipulators for On-Orbit Servicing and Active Debris Removal: [Link](https://spj.science.org/doi/10.34133/space.0291)
+- Capture and detumbling control for active debris removal by a dual-arm space robot: [Link](https://www.sciencedirect.com/science/article/pii/S1000936121003708)
+- Repeated Impact-Based Capture of a Spinning Object by a Dual-Arm Space Robot: [Link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7805643/)
+- Design and Operational Elements of the Robotic Subsystem for the e.deorbit Debris Removal Mission: [Link](https://pmc.ncbi.nlm.nih.gov/articles/PMC7805711/)
+- Formal Modelling and Runtime Verification of Autonomous Grasping for Active Debris Removal: [Link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8829115/)
+- Active debris removal: A review and case study on LEOPARD Phase 0-A mission: [Link](https://www.sciencedirect.com/science/article/abs/pii/S0273117723004453)
+
+## Simulation
+- Simulation for Planetary Robotic Perception and Autonomy: A Concise Survey of Recent Capabilities and Gaps: [Link](https://arxiv.org/html/2609.34743)
 
 ## Flight software and frameworks
 - Space ROS: An Open-Source Framework for Space Robotics and Flight Software (AIAA SciTech 2023): [Link](https://ntrs.nasa.gov/citations/20220017761)

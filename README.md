@@ -14,10 +14,11 @@ A curated, community-editable collection of resources for anyone who wants to be
 | Section | What you'll find |
 |---|---|
 | [Learning](docs/learning/README.md) | Videos, courses, books, robotics and space fundamentals |
-| [Papers](docs/papers/README.md) | About 50 papers in 9 topics: terrain perception, rover autonomy, lunar SLAM, planetary VLMs, in-orbit manipulation, flight software |
+| [Papers](docs/papers/README.md) | About 80 papers in 15 topics: terrain perception, rover autonomy, lunar SLAM, planetary VLMs, legged and cave robots, asteroids, ISRU excavation, teleoperation, debris removal, in-orbit manipulation, flight software |
 | [Datasets](datasets/README.md) | Mars, Moon and analog-field datasets with task and size |
 | [Tools](docs/tools/README.md) | OmniLRS, Isaac Sim, Gazebo, Space ROS, cFS, F Prime, SPICE, data portals |
 | [Missions & reports](docs/missions-and-reports/README.md) | NASA/ESA reports, mission documents, careers |
+| [Organizations](docs/organizations.md) | Agencies and labs to follow |
 | [Competitions](docs/competitions.md) | Lunabotics, ERC, ESA Space Resources Challenge, Space Apps |
 | [`library/`](library/) | Local PDF copies of key papers, reports and proposals |
 
@@ -27,10 +28,17 @@ A curated, community-editable collection of resources for anyone who wants to be
 - **Localization**: lunar VIO/SLAM, crater landmarks → [papers](docs/papers/README.md#lunar-navigation-slam-and-perception)
 - **AI/VLMs**: Space-LLaVA, Mars-Bench, foundation models → [papers](docs/papers/README.md#foundation-models-and-vlms-for-planetary-science)
 - **Manipulation**: on-orbit servicing, RL for free-flyers → [papers](docs/papers/README.md#space-manipulation-and-in-orbit-servicing)
+- **Locomotion**: jumping and legged robots, lava tubes, asteroid hoppers → [papers](docs/papers/README.md#legged-jumping-and-cave-robots)
+- **ISRU**: excavation, drilling, sampling → [papers](docs/papers/README.md#sampling-drilling-and-excavation-isru)
+- **Operations**: teleoperation under delay, human-robot teaming → [papers](docs/papers/README.md#teleoperation-shared-autonomy-and-human-robot-teaming)
+- **Debris**: active debris removal → [papers](docs/papers/README.md#space-debris-and-active-debris-removal)
 - **Software**: Space ROS, cFS, F Prime → [tools](docs/tools/README.md)
 
 ## Contributing
 Contributions are welcome: see [CONTRIBUTING.md](CONTRIBUTING.md). Link checking runs weekly through GitHub Actions.
+
+## License
+Curation and descriptions: [CC BY 4.0](LICENSE). Linked papers and PDFs in `library/` keep their own terms.
 
 ## Note on sources
 Many recent papers are preprints. Links were collected from web searches and may need checking; open an issue if one is broken.

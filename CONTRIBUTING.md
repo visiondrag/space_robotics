@@ -8,5 +8,5 @@
 ## Rules
 - Put each item in exactly one topic section; add it to the topic map in `README.md` if you create a section.
 - Prefer stable links (arXiv abs, DOI, official agency pages).
-- PDFs go in `library/` named `Author_Year_Title.pdf`. Only add papers you are allowed to redistribute, and keep files small (under about 10 MB).
+- PDFs go in `library/` named `Author_Year_Title.pdf`. Only add papers you are allowed to redistribute (arXiv and open access are fine; IEEE/Elsevier/Springer papers are link-only), and keep files small (under about 10 MB).
 - Run a link check before opening a PR (the CI does it weekly).
