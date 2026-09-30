@@ -1,39 +1,14 @@
 # Space Robotics
-This repository is created mainly to store and share resources for those who want to become a professional in Space Robotics (including me).
+A curated collection of resources for those who want to become professionals in Space Robotics (including me).
 
-![Alt Text](assets/futuristic_interplanetary_system.png)
+![Space](assets/futuristic_interplanetary_system.png)
 
-## Space Robotics Overview videos
-- @EPFLeSpace: eSpace Webinar – Space Robots: The Frontiers of Exploration: [Link](https://youtu.be/OsWsGtvZGSs?si=93s65_Qr94Nfp_qT)
-- @leggedrobotics: Space robotic playlists: [Link](https://www.youtube.com/playlist?list=PLE-BQwvVGf8EOpuaw6CUVULJAa4JwrC7X)
-
-## Space Robotics Courses
-- Robotics in Space: [Link](https://roboticsinspace.tech/)
-- Space Rover and Robotics: [Link](https://skyline-space.com/rar/)
-- CubeSats and Satellites: [Link](https://skyline-space.com/cas/)
-
-## Space Robotics Books
-- Space Robotics - The State of the Art and Future Trends: [Link](https://link.springer.com/book/10.1007/978-3-031-39214-6)
-- Space Robotics and Autonomous Systems - Technologies, advances and applications: [Link](https://digital-library.theiet.org/doi/book/10.1049/pbce131e)
-- Contemporary Planetary Robotics - An Approach Toward Autonomous Systems: [Link](https://onlinelibrary.wiley.com/doi/book/10.1002/9783527684977)
-
-## Where to learn Robotics
-- The Construct Robotics Institute: [Link](https://www.theconstruct.ai/)
-- HuggingFace Lerobot: [Link](https://huggingface.co/docs/lerobot/index)
-
-## Where to learn Space
-- Space Resources from ETHOS SPACE: [Link](https://ethos-space.com/)
-- Space Mission Design and Operations from EPFL: [Link](https://learning.edx.org/course/course-v1:EPFLx+EE585x+1T2021/home)
-- The Commercial Lunar Economy Field Guide: [Link](https://www.airuniversity.af.edu/Portals/10/AUPress/Books/B-186_Nayak_Lunar_Economy_Field_Guide.2.pdf)
-- NASA International Space Apps Challenge: [Link](https://www.spaceappschallenge.org/)
-## Space AI/Robotics related Thesis proposal
-- Thesis proposal in AI and Space Crop Production: [File](./pdfs/phd_proposal_ISAE.pdf)
-
-## Useful documents about Space Robotics
-- Report on Robotics Technology for NASA's Planetary Science Exploration: [Link](https://www1.grc.nasa.gov/wp-content/uploads/PESTO_Robotics_Technology_Needs_March_2024_2.pdf)
-- ASTROBOTIC LUNAR LANDERS Payload User’s Guide: [Link](https://www.astrobotic.com/wp-content/uploads/2022/01/PUGLanders_011222.pdf)
-- Careers in space: Be part of Australia’s space workforce: [File](pdfs/careers-in-space-booklet.pdf.pdf)
-- Cool Earth data: [Link](https://search.earthdata.nasa.gov/)
-
-## Super useful papers for literature review
-[PAPERS.md](PAPERS.md)
+| Section | Contents |
+|---|---|
+| [Learning](docs/learning/README.md) | Videos, courses, books, robotics and space fundamentals |
+| [Papers](docs/papers/README.md) | Literature by topic, research directions |
+| [Datasets](datasets/README.md) | Mars and Moon datasets |
+| [Tools](docs/tools/README.md) | Simulators, flight software, data access |
+| [Missions & reports](docs/missions-and-reports/README.md) | Agency reports, mission docs, careers |
+| [Competitions](docs/competitions.md) | Space Apps, Lunabotics, ERC |
+| [`library/`](library/) | Local PDFs (papers, reports, proposals) |
