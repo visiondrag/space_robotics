@@ -29,6 +29,7 @@ Datasets for planetary perception and navigation, sorted by body. Check each dat
 | SPEED / SPEED+ | Synthetic and hardware-in-the-loop images of Tango (about 60k synthetic + 9.5k HIL) | 6D pose estimation, domain gap |
 | SPARK / SPARK 2024 | About 150k RGB+depth images, 11 classes; real Zero-G lab sequences | Space object detection, segmentation, trajectory estimation |
 | Non-cooperative target benchmark | Large-scale synthetic | Target perception |
+| ESA-ADB, OPS-SAT, SMAP/MSL | Real satellite and rover telemetry | Anomaly detection |
 
 Details: [satellite/spacecraft-vision.md](satellite/spacecraft-vision.md)
 

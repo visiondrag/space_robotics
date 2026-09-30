@@ -15,7 +15,7 @@ A curated, community-editable collection of resources for anyone who wants to be
 |---|---|
 | [Learning](docs/learning/README.md) | Videos, courses, books, robotics and space fundamentals |
 | [Papers: planetary](docs/papers/README.md) | About 80 papers in 15 topics: terrain perception, rover autonomy, lunar SLAM, planetary VLMs, legged and cave robots, asteroids, ISRU excavation, teleoperation, debris removal, in-orbit manipulation, flight software |
-| [Papers: satellites](docs/papers/satellites.md) | About 45 papers: pose estimation, rendezvous and proximity ops, space object detection, attitude control with RL, star trackers and optical navigation, formation flying, onboard AI for Earth observation |
+| [Papers: satellites](docs/papers/satellites.md) | About 80 papers: pose estimation, orbit determination and space traffic, telemetry anomaly detection, radiation-tolerant AI hardware, lunar and deep-space optical navigation, rendezvous and proximity ops, space object detection, attitude control with RL, star trackers and optical navigation, formation flying, onboard AI for Earth observation |
 | [Datasets](datasets/README.md) | Mars, Moon, satellite-vision and analog-field datasets with task and size |
 | [Tools](docs/tools/README.md) | OmniLRS, Isaac Sim, Gazebo, Basilisk, Space ROS, cFS, F Prime, SPICE, data portals |
 | [Missions & reports](docs/missions-and-reports/README.md) | NASA/ESA reports, mission documents, careers |
@@ -35,6 +35,10 @@ A curated, community-editable collection of resources for anyone who wants to be
 - **Debris**: active debris removal → [papers](docs/papers/README.md#space-debris-and-active-debris-removal)
 - **Satellite vision**: pose estimation, space object detection → [papers](docs/papers/satellites.md#spacecraft-pose-estimation-and-relative-navigation), [datasets](datasets/satellite/spacecraft-vision.md)
 - **Satellite GNC**: attitude control, formation flying, star trackers → [papers](docs/papers/satellites.md#attitude-determination-and-control)
+- **Orbit and traffic**: orbit prediction, conjunction assessment, collision avoidance → [papers](docs/papers/satellites.md#orbit-determination-orbit-prediction-and-space-traffic)
+- **Anomaly detection**: telemetry, fault diagnosis → [papers](docs/papers/satellites.md#anomaly-detection-and-fault-diagnosis)
+- **Onboard hardware**: FPGA, VPU, GPU for space → [papers](docs/papers/satellites.md#on-orbit-ai-hardware-radiation-tolerant-accelerators)
+- **Deep-space navigation**: crater-based TRN, cislunar optical navigation → [papers](docs/papers/satellites.md#lunar-and-deep-space-navigation-optical-navigation-and-landing)
 - **Onboard AI**: Φ-Sat, cloud detection, TinyML on CubeSats → [papers](docs/papers/satellites.md#onboard-ai-and-earth-observation)
 - **Software**: Space ROS, cFS, F Prime → [tools](docs/tools/README.md)
 
