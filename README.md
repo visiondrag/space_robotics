@@ -1,39 +1,52 @@
 # Space Robotics
-This repository is created mainly to store and share resources for those who want to become a professional in Space Robotics (including me).
 
-![Alt Text](assets/futuristic_interplanetary_system.png)
+A curated, community-editable collection of resources for anyone who wants to become a professional in space robotics, across two areas: **planetary and surface robotics** (rovers, landers, legged robots, ISRU) and **satellites and orbital systems** (attitude control, guidance and navigation, proximity operations, in-orbit servicing, space computer vision).
 
-## Space Robotics Overview videos
-- @EPFLeSpace: eSpace Webinar – Space Robots: The Frontiers of Exploration: [Link](https://youtu.be/OsWsGtvZGSs?si=93s65_Qr94Nfp_qT)
-- @leggedrobotics: Space robotic playlists: [Link](https://www.youtube.com/playlist?list=PLE-BQwvVGf8EOpuaw6CUVULJAa4JwrC7X)
+![Space](assets/futuristic_interplanetary_system.png)
 
-## Space Robotics Courses
-- Robotics in Space: [Link](https://roboticsinspace.tech/)
-- Space Rover and Robotics: [Link](https://skyline-space.com/rar/)
-- CubeSats and Satellites: [Link](https://skyline-space.com/cas/)
+## Start here
+1. **New to the field?** Watch the overview videos and follow the [learning path](docs/learning/README.md).
+2. **Doing research?** Browse [papers by topic](docs/papers/README.md) and the [datasets](datasets/README.md).
+3. **Building something?** See [simulators and flight software](docs/tools/README.md).
+4. **Want experience?** Join a [competition](docs/competitions.md).
 
-## Space Robotics Books
-- Space Robotics - The State of the Art and Future Trends: [Link](https://link.springer.com/book/10.1007/978-3-031-39214-6)
-- Space Robotics and Autonomous Systems - Technologies, advances and applications: [Link](https://digital-library.theiet.org/doi/book/10.1049/pbce131e)
-- Contemporary Planetary Robotics - An Approach Toward Autonomous Systems: [Link](https://onlinelibrary.wiley.com/doi/book/10.1002/9783527684977)
+## Contents
+| Section | What you'll find |
+|---|---|
+| [Learning](docs/learning/README.md) | Videos, courses, books, robotics and space fundamentals |
+| [Papers: planetary](docs/papers/README.md) | About 80 papers in 15 topics: terrain perception, rover autonomy, lunar SLAM, planetary VLMs, legged and cave robots, asteroids, ISRU excavation, teleoperation, debris removal, in-orbit manipulation, flight software |
+| [Papers: satellites](docs/papers/satellites.md) | About 80 papers: pose estimation, orbit determination and space traffic, telemetry anomaly detection, radiation-tolerant AI hardware, lunar and deep-space optical navigation, rendezvous and proximity ops, space object detection, attitude control with RL, star trackers and optical navigation, formation flying, onboard AI for Earth observation |
+| [Datasets](datasets/README.md) | Mars, Moon, satellite-vision and analog-field datasets with task and size |
+| [Tools](docs/tools/README.md) | OmniLRS, Isaac Sim, Gazebo, Basilisk, Space ROS, cFS, F Prime, SPICE, data portals |
+| [Missions & reports](docs/missions-and-reports/README.md) | NASA/ESA reports, mission documents, careers |
+| [Organizations](docs/organizations.md) | Agencies and labs to follow |
+| [Competitions](docs/competitions.md) | Lunabotics, ERC, ESA Space Resources Challenge, Space Apps |
+| [`library/`](library/) | Local PDF copies of key papers, reports and proposals |
 
-## Where to learn Robotics
-- The Construct Robotics Institute: [Link](https://www.theconstruct.ai/)
-- HuggingFace Lerobot: [Link](https://huggingface.co/docs/lerobot/index)
+## Topic map
+- **Perception**: terrain segmentation, traversability, monocular depth → [papers](docs/papers/README.md#terrain-segmentation-and-perception-mars), [datasets](datasets/README.md)
+- **Autonomy**: Perseverance AutoNav/ENav, MLNav → [papers](docs/papers/README.md#rover-autonomy-and-navigation)
+- **Localization**: lunar VIO/SLAM, crater landmarks → [papers](docs/papers/README.md#lunar-navigation-slam-and-perception)
+- **AI/VLMs**: Space-LLaVA, Mars-Bench, foundation models → [papers](docs/papers/README.md#foundation-models-and-vlms-for-planetary-science)
+- **Manipulation**: on-orbit servicing, RL for free-flyers → [papers](docs/papers/README.md#space-manipulation-and-in-orbit-servicing)
+- **Locomotion**: jumping and legged robots, lava tubes, asteroid hoppers → [papers](docs/papers/README.md#legged-jumping-and-cave-robots)
+- **ISRU**: excavation, drilling, sampling → [papers](docs/papers/README.md#sampling-drilling-and-excavation-isru)
+- **Operations**: teleoperation under delay, human-robot teaming → [papers](docs/papers/README.md#teleoperation-shared-autonomy-and-human-robot-teaming)
+- **Debris**: active debris removal → [papers](docs/papers/README.md#space-debris-and-active-debris-removal)
+- **Satellite vision**: pose estimation, space object detection → [papers](docs/papers/satellites.md#spacecraft-pose-estimation-and-relative-navigation), [datasets](datasets/satellite/spacecraft-vision.md)
+- **Satellite GNC**: attitude control, formation flying, star trackers → [papers](docs/papers/satellites.md#attitude-determination-and-control)
+- **Orbit and traffic**: orbit prediction, conjunction assessment, collision avoidance → [papers](docs/papers/satellites.md#orbit-determination-orbit-prediction-and-space-traffic)
+- **Anomaly detection**: telemetry, fault diagnosis → [papers](docs/papers/satellites.md#anomaly-detection-and-fault-diagnosis)
+- **Onboard hardware**: FPGA, VPU, GPU for space → [papers](docs/papers/satellites.md#on-orbit-ai-hardware-radiation-tolerant-accelerators)
+- **Deep-space navigation**: crater-based TRN, cislunar optical navigation → [papers](docs/papers/satellites.md#lunar-and-deep-space-navigation-optical-navigation-and-landing)
+- **Onboard AI**: Φ-Sat, cloud detection, TinyML on CubeSats → [papers](docs/papers/satellites.md#onboard-ai-and-earth-observation)
+- **Software**: Space ROS, cFS, F Prime → [tools](docs/tools/README.md)
 
-## Where to learn Space
-- Space Resources from ETHOS SPACE: [Link](https://ethos-space.com/)
-- Space Mission Design and Operations from EPFL: [Link](https://learning.edx.org/course/course-v1:EPFLx+EE585x+1T2021/home)
-- The Commercial Lunar Economy Field Guide: [Link](https://www.airuniversity.af.edu/Portals/10/AUPress/Books/B-186_Nayak_Lunar_Economy_Field_Guide.2.pdf)
-- NASA International Space Apps Challenge: [Link](https://www.spaceappschallenge.org/)
-## Space AI/Robotics related Thesis proposal
-- Thesis proposal in AI and Space Crop Production: [File](./pdfs/phd_proposal_ISAE.pdf)
+## Contributing
+Contributions are welcome: see [CONTRIBUTING.md](CONTRIBUTING.md). Link checking runs weekly through GitHub Actions.
 
-## Useful documents about Space Robotics
-- Report on Robotics Technology for NASA's Planetary Science Exploration: [Link](https://www1.grc.nasa.gov/wp-content/uploads/PESTO_Robotics_Technology_Needs_March_2024_2.pdf)
-- ASTROBOTIC LUNAR LANDERS Payload User’s Guide: [Link](https://www.astrobotic.com/wp-content/uploads/2022/01/PUGLanders_011222.pdf)
-- Careers in space: Be part of Australia’s space workforce: [File](pdfs/careers-in-space-booklet.pdf.pdf)
-- Cool Earth data: [Link](https://search.earthdata.nasa.gov/)
+## License
+Curation and descriptions: [CC BY 4.0](LICENSE). Linked papers and PDFs in `library/` keep their own terms.
 
-## Super useful papers for literature review
-[PAPERS.md](PAPERS.md)
+## Note on sources
+Many recent papers are preprints. Links were collected from web searches and may need checking; open an issue if one is broken.
