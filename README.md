@@ -1,6 +1,6 @@
 # Space Robotics
 
-A curated, community-editable collection of resources for anyone who wants to become a professional in space robotics: rovers, landers, in-orbit servicing, autonomy and perception.
+A curated, community-editable collection of resources for anyone who wants to become a professional in space robotics, across two areas: **planetary and surface robotics** (rovers, landers, legged robots, ISRU) and **satellites and orbital systems** (attitude control, guidance and navigation, proximity operations, in-orbit servicing, space computer vision).
 
 ![Space](assets/futuristic_interplanetary_system.png)
 
@@ -14,9 +14,10 @@ A curated, community-editable collection of resources for anyone who wants to be
 | Section | What you'll find |
 |---|---|
 | [Learning](docs/learning/README.md) | Videos, courses, books, robotics and space fundamentals |
-| [Papers](docs/papers/README.md) | About 80 papers in 15 topics: terrain perception, rover autonomy, lunar SLAM, planetary VLMs, legged and cave robots, asteroids, ISRU excavation, teleoperation, debris removal, in-orbit manipulation, flight software |
-| [Datasets](datasets/README.md) | Mars, Moon and analog-field datasets with task and size |
-| [Tools](docs/tools/README.md) | OmniLRS, Isaac Sim, Gazebo, Space ROS, cFS, F Prime, SPICE, data portals |
+| [Papers: planetary](docs/papers/README.md) | About 80 papers in 15 topics: terrain perception, rover autonomy, lunar SLAM, planetary VLMs, legged and cave robots, asteroids, ISRU excavation, teleoperation, debris removal, in-orbit manipulation, flight software |
+| [Papers: satellites](docs/papers/satellites.md) | About 45 papers: pose estimation, rendezvous and proximity ops, space object detection, attitude control with RL, star trackers and optical navigation, formation flying, onboard AI for Earth observation |
+| [Datasets](datasets/README.md) | Mars, Moon, satellite-vision and analog-field datasets with task and size |
+| [Tools](docs/tools/README.md) | OmniLRS, Isaac Sim, Gazebo, Basilisk, Space ROS, cFS, F Prime, SPICE, data portals |
 | [Missions & reports](docs/missions-and-reports/README.md) | NASA/ESA reports, mission documents, careers |
 | [Organizations](docs/organizations.md) | Agencies and labs to follow |
 | [Competitions](docs/competitions.md) | Lunabotics, ERC, ESA Space Resources Challenge, Space Apps |
@@ -32,6 +33,9 @@ A curated, community-editable collection of resources for anyone who wants to be
 - **ISRU**: excavation, drilling, sampling → [papers](docs/papers/README.md#sampling-drilling-and-excavation-isru)
 - **Operations**: teleoperation under delay, human-robot teaming → [papers](docs/papers/README.md#teleoperation-shared-autonomy-and-human-robot-teaming)
 - **Debris**: active debris removal → [papers](docs/papers/README.md#space-debris-and-active-debris-removal)
+- **Satellite vision**: pose estimation, space object detection → [papers](docs/papers/satellites.md#spacecraft-pose-estimation-and-relative-navigation), [datasets](datasets/satellite/spacecraft-vision.md)
+- **Satellite GNC**: attitude control, formation flying, star trackers → [papers](docs/papers/satellites.md#attitude-determination-and-control)
+- **Onboard AI**: Φ-Sat, cloud detection, TinyML on CubeSats → [papers](docs/papers/satellites.md#onboard-ai-and-earth-observation)
 - **Software**: Space ROS, cFS, F Prime → [tools](docs/tools/README.md)
 
 ## Contributing

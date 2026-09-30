@@ -8,6 +8,15 @@
 | [Gazebo](https://gazebosim.org/) | General robotics simulator, common for rover work |
 | [SmallSatSim](https://arxiv.org/pdf/2603.14598) | GPU-accelerated microgravity robotics toolkit |
 
+## Satellite dynamics and astrodynamics (verify links)
+| Tool | What it is |
+|---|---|
+| [Basilisk](https://hanspeterschaub.info/basilisk/) | Astrodynamics and spacecraft GNC simulation framework (CU Boulder AVS Lab). Has a [ROS 2 bridge paper](https://arxiv.org/pdf/2512.09833). |
+| [GMAT](https://software.nasa.gov/software/GSC-17177-1) | NASA General Mission Analysis Tool |
+| [Orekit](https://www.orekit.org/) | Open-source space flight dynamics library |
+| [SPARK simulator](https://arxiv.org/html/2104.05978) | Unity3D simulator for space object imagery |
+| Stanford SLAB [TRON](https://slab.stanford.edu/projects/datasets) | Hardware testbed behind SPEED+ (facility, not software) |
+
 ## Flight software
 | Tool | What it is |
 |---|---|

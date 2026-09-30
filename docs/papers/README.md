@@ -1,5 +1,7 @@
 # Papers
 
+**Two areas:** this page covers **planetary and surface robotics** (rovers, legged, ISRU, VLMs). For **satellites, spacecraft GNC, attitude control, proximity operations and space computer vision** see [satellites.md](satellites.md).
+
 Curated literature for space robotics, grouped by topic. Entries marked **File** have a local copy in [`library/papers/`](../../library/papers/); the rest are links only (IEEE papers are not redistributed). Many recent entries are preprints and have not been peer reviewed. See [CONTRIBUTING.md](../../CONTRIBUTING.md) to add one.
 
 **Suggested reading order for newcomers:** the flight software paper (Space ROS) and the Perseverance autonomy article for the big picture, then the terrain traversability section, then the survey of on-orbit servicing manipulators.
@@ -8,7 +10,7 @@ Local PDFs live in [`library/papers/`](../../library/papers/). Add new entries i
 
 ## Terrain traversability
 Local copies exist only for freely redistributable papers; IEEE papers are link-only.
-- On terrain traversability analysis in unstructured environments: recent advances in forest applications: [File](../../library/papers/Terrain_Traversability_Forest_Review_2025.pdf) - [Link](https://link.springer.com/article/10.1007/s11370-025-00591-4)
+- On terrain traversability analysis in unstructured environments: recent advances in forest applications (CC BY 4.0 open access; forest-focused, methods transfer to planetary terrain): [File](../../library/papers/Terrain_Traversability_Forest_Review_2025.pdf) - [Link](https://link.springer.com/article/10.1007/s11370-025-00591-4)
 - TACS-Graphs: Traversability-Aware Consistent Scene Graphs for Ground Robot Indoor Localization and Mapping: [File](../../library/papers/TACS-Graphs_2025.pdf) - [Link](https://arxiv.org/abs/2506.14178)
 - Stereo Vision and Rover Navigation Software for Planetary Exploration: [Link](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1035370)
 - Visual Traversability Analysis for Micro Planetary Rover: [Link](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5420494)

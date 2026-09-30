@@ -27,3 +27,13 @@ Suggested path: overview videos, then one robotics course and one space course, 
 - Space Resources (ETHOS SPACE): [Link](https://ethos-space.com/)
 - Space Mission Design and Operations (EPFL, edX): [Link](https://learning.edx.org/course/course-v1:EPFLx+EE585x+1T2021/home)
 - The Commercial Lunar Economy Field Guide: [Link](https://www.airuniversity.af.edu/Portals/10/AUPress/Books/B-186_Nayak_Lunar_Economy_Field_Guide.2.pdf)
+
+## Satellites: orbits, attitude control, GNC (books, no links; check your library)
+- Fundamentals of Astrodynamics and Applications, D. Vallado
+- Orbital Mechanics for Engineering Students, H. Curtis
+- Fundamentals of Spacecraft Attitude Determination and Control, F. L. Markley and J. L. Crassidis
+- Analytical Mechanics of Space Systems, H. Schaub and J. Junkins
+- Spacecraft Attitude Determination and Control, J. Wertz (ed.)
+
+## Space computer vision
+- Read the survey [Computer vision tasks for intelligent aerospace missions](https://arxiv.org/pdf/2407.06513) first, then the [pose estimation survey](https://arxiv.org/pdf/2305.07348), then try the SPEED+ dataset.

@@ -11,5 +11,9 @@ Research groups appearing in this repository
 - EPFL eSpace Center
 - Harbin Institute of Technology (MarsScapes)
 - Astrobotic (lunar landers)
+- Stanford Space Rendezvous Laboratory (SLAB): SPEED/SPEED+ datasets, TRON testbed
+- SnT, University of Luxembourg, CVI² group: SPARK datasets, Zero-G lab
+- ESA Advanced Concepts Team and Kelvins competitions
+- CU Boulder AVS Lab (Basilisk)
 
 Add a line per organization with a one-line focus when you extend this list.
