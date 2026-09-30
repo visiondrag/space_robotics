@@ -29,7 +29,12 @@ Cross-cutting page for machine learning applied to both planetary robotics and s
 - GeoNLI: A Natural Language Interpreter for Satellite Imagery: [Link](https://arxiv.org/pdf/2609.28741)
 - REOBench: Benchmarking Robustness of Earth Observation Foundation Models: [Link](https://arxiv.org/pdf/2505.16793)
 - EarthNets: Empowering AI in Earth Observation: [Link](https://arxiv.org/pdf/2210.04936)
-- Named models to look up: GeoChat, RemoteCLIP, EarthGPT, SkyScript, SatlasPretrain, VRSBench.
+- GeoChat: Grounded Large Vision-Language Model for Remote Sensing (CVPR 2024): [Link](https://arxiv.org/abs/2311.15826)
+- RemoteCLIP: A Vision Language Foundation Model for Remote Sensing: [Link](https://arxiv.org/abs/2306.11029)
+- EarthGPT: A Universal Multi-modal Large Language Model for Multi-sensor Image Comprehension in Remote Sensing: [Link](https://arxiv.org/abs/2401.16822)
+- SkyScript: A Large and Semantically Diverse Vision-Language Dataset for Remote Sensing (5.2M image-text pairs): [Link](https://arxiv.org/abs/2312.12856)
+- SatlasPretrain: A Large-Scale Dataset for Remote Sensing Image Understanding: [Link](https://arxiv.org/abs/2211.15660)
+- VRSBench: A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding: [Link](https://arxiv.org/abs/2406.12384)
 
 ## LLM and agentic systems for spacecraft operations
 - Language Models are Spacecraft Operators: [Link](https://arxiv.org/abs/2404.00413)
@@ -43,9 +48,3 @@ Cross-cutting page for machine learning applied to both planetary robotics and s
 - RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation: [Link](https://arxiv.org/html/2406.04339v2)
 - Vision Language Action (VLA) Models for Unmanned Aerial Robotics and Bimanual Manipulation: A Review: [Link](https://arxiv.org/pdf/2607.06706)
 - Related notes in this repo: [VLAs for driving](vlas-for-driving.md), [efficient inference](efficient-inference.md)
-
-## Open problems worth exploring
-- Onboard deployment: run VLMs and foundation models under radiation-tolerant, low-power constraints (see [satellite hardware](satellites.md#on-orbit-ai-hardware-radiation-tolerant-accelerators)).
-- Domain gap: models trained on Earth imagery vs Mars/Moon lighting and texture.
-- Hallucination and safety of LLM agents in operations.
-- Sparse labels: SAM/DINOv2 pseudo-labels for planetary terrain.

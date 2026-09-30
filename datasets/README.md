@@ -9,9 +9,8 @@ Datasets for planetary perception and navigation, sorted by body. Check each dat
 | MarsScapes | 195 panoramas, 9 classes | Semantic and instance segmentation | [mars/MarsScapes.md](mars/MarsScapes.md) |
 | S5Mars | 6K high-resolution images, sparse labels | Semi-supervised segmentation | [mars/S5Mars.md](mars/S5Mars.md) |
 | Curiosity surface images | Curiosity images | Classification | [mars/Curiosity_surface_images.md](mars/Curiosity_surface_images.md) |
-| Mars32K | 32,368 unlabeled Curiosity Mastcam colour images (2012–2018) | Self-supervised / clustering | [mars/Mars32k_MarsData_Mars-Bench.md](mars/Mars32k_MarsData_Mars-Bench.md) |
-| MarsData-V2 | 8,390 labeled 512×512 Mastcam images | Rock segmentation | [mars/Mars32k_MarsData_Mars-Bench.md](mars/Mars32k_MarsData_Mars-Bench.md) |
-| Mars-Bench | 20 datasets, orbital and surface | Classification, segmentation, detection | [mars/Mars32k_MarsData_Mars-Bench.md](mars/Mars32k_MarsData_Mars-Bench.md) |
+| MarsData-V2 | 8,390 labeled 512×512 Mastcam images | Rock segmentation | [mars/MarsData_Mars-Bench.md](mars/MarsData_Mars-Bench.md) |
+| Mars-Bench | 20 datasets, orbital and surface | Classification, segmentation, detection | [mars/MarsData_Mars-Bench.md](mars/MarsData_Mars-Bench.md) |
 | MarsPlanBench | Terrain maps for path planning | Rover path planning | [mars/orbital-and-benchmarks.md](mars/orbital-and-benchmarks.md) |
 | HiRISE boulders, CTX landforms, RMaM rockfall, MCTED | Orbital imagery | Segmentation, classification, DEM generation | [mars/orbital-and-benchmarks.md](mars/orbital-and-benchmarks.md) |
 | Tianwen-1 segmentation | Mars surface images | Segmentation | [misc-links.md](misc-links.md) |
@@ -23,27 +22,27 @@ Datasets for planetary perception and navigation, sorted by body. Check each dat
 | POLAR-Sim | About 2,600 HDR stereo pairs, 13 terrain scenarios (NASA POLAR) | Perception, rover simulation | [moon/lunar-datasets.md](moon/lunar-datasets.md) |
 | LuMon | Chang'e-3 stereo ground truth, CHERI dark analog | Monocular depth | [moon/lunar-datasets.md](moon/lunar-datasets.md) |
 | MoonAnything | Large-scale lunar supervised data | Vision benchmark | [moon/lunar-datasets.md](moon/lunar-datasets.md) |
-| MoonPlanBench, SPICE-HL3, RMaM-2020 | Planning maps, single-photon and stereo, rockfall tiles | Planning, perception | [moon/lunar-datasets.md](moon/lunar-datasets.md) |
+| [MoonPlanBench](https://arxiv.org/abs/2512.21438), [SPICE-HL3](https://www.nature.com/articles/s41597-026-06668-8), [RMaM-2020](https://www.frontiersin.org/articles/10.3389/frsen.2021.640034/full) | Planning maps, single-photon and stereo, rockfall tiles | Planning, perception | [moon/lunar-datasets.md](moon/lunar-datasets.md) |
 | Real change lunar landscape, LPI lunar surface | Imagery | Change detection / reference | [misc-links.md](misc-links.md) |
 
 ## Satellite and orbital vision
 | Name | Data | Task |
 |---|---|---|
-| SPEED / SPEED+ | Synthetic and hardware-in-the-loop images of Tango (about 60k synthetic + 9.5k HIL) | 6D pose estimation, domain gap |
-| SPARK / SPARK 2024 | About 150k RGB+depth images, 11 classes; real Zero-G lab sequences | Space object detection, segmentation, trajectory estimation |
-| Non-cooperative target benchmark | Large-scale synthetic | Target perception |
-| ESA-ADB, OPS-SAT, SMAP/MSL | Real satellite and rover telemetry | Anomaly detection |
+| [SPEED / SPEED+](https://purl.stanford.edu/wv398fc4383) | Synthetic and hardware-in-the-loop images of Tango (about 60k synthetic + 9.5k HIL) | 6D pose estimation, domain gap |
+| [SPARK](https://arxiv.org/html/2104.05978) / [SPARK 2024](https://cvi2.uni.lu/spark2024/) | About 150k RGB+depth images, 11 classes; real Zero-G lab sequences | Space object detection, segmentation, trajectory estimation |
+| [Non-cooperative target benchmark](https://www.nature.com/articles/s41597-025-06056-8) | Large-scale synthetic | Target perception |
+| [ESA-ADB](https://arxiv.org/pdf/2406.17826), [OPS-SAT](https://arxiv.org/pdf/2407.04730), [SMAP/MSL](https://arxiv.org/pdf/1802.04431) | Real satellite and rover telemetry | Anomaly detection |
 
 Details: [satellite/spacecraft-vision.md](satellite/spacecraft-vision.md)
 
 ## Vision-language and multimodal datasets
 | Name | Domain | Use |
 |---|---|---|
-| Space-LLaVA fine-tuning data (extraterrestrial databases with fine-grained language annotations) | Planetary | VLM adaptation ([paper](https://arxiv.org/abs/2408.05924)) |
-| MarsRetrieval | Mars | Image-text retrieval, landform retrieval, geo-localization ([paper](https://arxiv.org/html/2602.13961v1)) |
-| Mars-Bench | Mars | Foundation-model evaluation |
-| RSVLM-QA, ChatEarthNet, VRSBench, SkyScript, SatlasPretrain | Earth observation | Remote-sensing VLM training and evaluation, see [AI/VLM papers](../docs/papers/ai-vlm.md) |
-| LinkS²Bench | UAV-satellite views | Cross-view spatial reasoning |
+| [Space-LLaVA](https://arxiv.org/abs/2408.05924) fine-tuning data (extraterrestrial databases with fine-grained language annotations) | Planetary | VLM adaptation ([paper](https://arxiv.org/abs/2408.05924)) |
+| [MarsRetrieval](https://arxiv.org/html/2602.13961v1) | Mars | Image-text retrieval, landform retrieval, geo-localization ([paper](https://arxiv.org/html/2602.13961v1)) |
+| [Mars-Bench](https://arxiv.org/abs/2510.24010) | Mars | Foundation-model evaluation |
+| [RSVLM-QA](https://arxiv.org/abs/2508.07918), [ChatEarthNet](https://arxiv.org/pdf/2402.11325), [VRSBench](https://arxiv.org/abs/2406.12384), [SkyScript](https://arxiv.org/abs/2312.12856), [SatlasPretrain](https://arxiv.org/abs/2211.15660) | Earth observation | Remote-sensing VLM training and evaluation, see [AI/VLM papers](../docs/papers/ai-vlm.md) |
+| [LinkS²Bench](https://arxiv.org/pdf/2604.02020) | UAV-satellite views | Cross-view spatial reasoning |
 
 ## Analog field data
 | Name | Data | Link |
