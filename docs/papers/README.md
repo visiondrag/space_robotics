@@ -1,5 +1,9 @@
 # Papers
 
+Curated literature for space robotics, grouped by topic. Entries marked **File** have a local copy in [`library/papers/`](../../library/papers/); the rest are links only. Many recent entries are preprints and have not been peer reviewed. See [CONTRIBUTING.md](../../CONTRIBUTING.md) to add one.
+
+**Suggested reading order for newcomers:** the flight software paper (Space ROS) and the Perseverance autonomy article for the big picture, then the terrain traversability section, then the survey of on-orbit servicing manipulators.
+
 Local PDFs live in [`library/papers/`](../../library/papers/). Add new entries in the format: title — why it matters — file / link.
 
 ## Terrain traversability
@@ -21,6 +25,8 @@ Local PDFs live in [`library/papers/`](../../library/papers/). Add new entries i
 - Enhancing Martian Terrain Recognition with Deep Constrained Clustering: [Link](https://arxiv.org/html/2503.17633)
 - Efficient Adaptation of Deep Neural Networks for Semantic Segmentation in Space Applications: [Link](https://arxiv.org/pdf/2504.15991)
 - nnMNet: Baseline for Martian Terrain Semantic Segmentation: [Link](https://arxiv.org/pdf/2608.29609)
+- GMSRI: A Texture-Based Martian Surface Rock Image Dataset: [Link](https://pmc.ncbi.nlm.nih.gov/articles/PMC8399451/)
+- MOMO: Mars Orbital Model Foundation Model for Mars Orbital Applications: [Link](https://arxiv.org/pdf/2604.02719)
 
 ## Rover autonomy and navigation
 - Autonomous robotics is driving Perseverance rover's progress on Mars (Science Robotics; AutoNav, AEGIS, OBP): [Link](https://www.science.org/doi/10.1126/scirobotics.adi3099)
@@ -35,6 +41,12 @@ Local PDFs live in [`library/papers/`](../../library/papers/). Add new entries i
 - BEVIO: Bird's-Eye-View based Sparse-Update Visual-Inertial Odometry for Lunar Day-Night Navigation: [Link](https://arxiv.org/abs/2606.00709)
 - Full Stack Navigation, Mapping, and Planning for the Lunar Autonomy Challenge: [Link](https://arxiv.org/pdf/2603.17232)
 - Vulcan Centaur: towards end-to-end real-time perception in lunar rovers: [Link](https://arxiv.org/abs/2011.15104)
+- Lunar Rover Localization Using Craters as Landmarks: [Link](https://arxiv.org/pdf/2203.10073)
+- Semantic Segmentation and Depth Estimation for Real-Time Lunar Surface Mapping Using 3D Gaussian Splatting: [Link](https://arxiv.org/pdf/2603.18218)
+- POLAR-Sim: Augmenting NASA's POLAR Dataset for Data-Driven Lunar Perception and Rover Simulation: [Link](https://arxiv.org/pdf/2309.12397)
+- LuMon: A Comprehensive Benchmark and Development Suite with Novel Datasets for Lunar Monocular Depth Estimation: [Link](https://arxiv.org/html/2604.09352)
+- MoonAnything: A Vision Benchmark with Large-Scale Lunar Supervised Data: [Link](https://arxiv.org/pdf/2604.00682)
+- OmniLRS: A Photorealistic Simulator for Lunar Robotics: [Link](https://arxiv.org/abs/2309.08997)
 
 ## Foundation models and VLMs for planetary science
 - Space-LLaVA: a Vision-Language Model Adapted to Extraterrestrial Applications: [Link](https://arxiv.org/abs/2408.05924)
@@ -53,6 +65,18 @@ Local PDFs live in [`library/papers/`](../../library/papers/). Add new entries i
 - Leveraging Procedural Generation for Learning Autonomous Peg-in-Hole Assembly in Space: [Link](https://arxiv.org/pdf/2405.01134)
 - APIARY: Autonomous Planning In-space Assembly Reinforcement-learning free-flYer, ISS Astrobee testing: [Link](https://arxiv.org/pdf/2512.03729)
 - SmallSatSim: A GPU-Accelerated Microgravity Robotics Toolkit for Planning, Control, and Policy Learning: [Link](https://arxiv.org/pdf/2603.14598)
+
+## Flight software and frameworks
+- Space ROS: An Open-Source Framework for Space Robotics and Flight Software (AIAA SciTech 2023): [Link](https://ntrs.nasa.gov/citations/20220017761)
+- SRFS: Parallel Processing Fault-tolerant ROS2-based Flight Software for the Space Ranger CubeSat: [Link](https://arxiv.org/pdf/2412.08164)
+- Bridging the Basilisk Astrodynamics Framework with ROS 2 for Modular Spacecraft Simulation and Hardware Integration: [Link](https://arxiv.org/pdf/2512.09833)
+
+## Space resources and mining
+- Mining beyond Earth with Space Robots: Exploration, Sampling, and Extraction: [Link](https://arxiv.org/pdf/2608.21358)
+
+## Datasets (papers)
+- The Katwijk beach planetary rover dataset (IJRR): [Link](https://dl.acm.org/doi/abs/10.1177/0278364917737153)
+- Mars-Bench, LuSNAR, POLAR-Sim, LuMon and MoonAnything are described in [datasets/](../../datasets/README.md).
 
 ## Research directions (VLMs / VLAs / efficient inference)
 - [VLAs for driving](vlas-for-driving.md)

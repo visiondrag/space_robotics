@@ -1,5 +1,7 @@
 # Learning
 
+Suggested path: overview videos, then one robotics course and one space course, then a book chapter on planetary rovers, then papers.
+
 ## Overview videos
 - eSpace Webinar – Space Robots: The Frontiers of Exploration (EPFL): [Link](https://youtu.be/OsWsGtvZGSs?si=93s65_Qr94Nfp_qT)
 - Space robotics playlist (@leggedrobotics): [Link](https://www.youtube.com/playlist?list=PLE-BQwvVGf8EOpuaw6CUVULJAa4JwrC7X)
@@ -8,6 +10,9 @@
 - Robotics in Space: [Link](https://roboticsinspace.tech/)
 - Space Rover and Robotics: [Link](https://skyline-space.com/rar/)
 - CubeSats and Satellites: [Link](https://skyline-space.com/cas/)
+
+- MIT OpenLearning, Introduction to Space Robotics (16.00x, section 6.5): [Link](https://openlearninglibrary.mit.edu/courses/course-v1:MITx+16.00x+2T2019/jump_to_id/01606b08de584bba9f3bb21dd88c3d2f)
+- NASA Robotics Alliance Project, lecture archives and MIT courses: [Link](https://robotics.nasa.gov/keep-learning-with-lecture-archives-and-mits-courses/)
 
 ## Books
 - Space Robotics - The State of the Art and Future Trends: [Link](https://link.springer.com/book/10.1007/978-3-031-39214-6)
