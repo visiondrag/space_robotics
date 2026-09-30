@@ -1,6 +1,6 @@
 # Papers
 
-**Two areas:** this page covers **planetary and surface robotics** (rovers, legged, ISRU, VLMs). For **satellites, spacecraft GNC, attitude control, proximity operations and space computer vision** see [satellites.md](satellites.md).
+**Two areas:** this page covers **planetary and surface robotics** (rovers, legged, ISRU, VLMs). For **AI, foundation models, VLMs and LLM agents** see [ai-vlm.md](ai-vlm.md). For **satellites, spacecraft GNC, attitude control, proximity operations and space computer vision** see [satellites.md](satellites.md).
 
 Curated literature for space robotics, grouped by topic. Entries marked **File** have a local copy in [`library/papers/`](../../library/papers/); the rest are links only (IEEE papers are not redistributed). Many recent entries are preprints and have not been peer reviewed. See [CONTRIBUTING.md](../../CONTRIBUTING.md) to add one.
 
@@ -122,5 +122,6 @@ Local copies exist only for freely redistributable papers; IEEE papers are link-
 - Mars-Bench, LuSNAR, POLAR-Sim, LuMon and MoonAnything are described in [datasets/](../../datasets/README.md).
 
 ## Research directions (VLMs / VLAs / efficient inference)
+- More on foundation models, remote-sensing VLMs, LLM agents for spacecraft and VLAs: [ai-vlm.md](ai-vlm.md)
 - [VLAs for driving](vlas-for-driving.md)
 - [Efficient inference](efficient-inference.md)
