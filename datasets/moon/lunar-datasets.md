@@ -5,3 +5,6 @@
 - **LuMon**: benchmark for lunar monocular depth estimation, with Chang'e-3 stereo ground truth and the CHERI dark analog dataset. [Paper](https://arxiv.org/html/2604.09352)
 - **MoonAnything**: large-scale lunar supervised vision benchmark. [Paper](https://arxiv.org/pdf/2604.00682)
 - **OmniLRS** (simulator, generates synthetic data): see [docs/tools](../../docs/tools/README.md).
+- **SPICE-HL3** (Scientific Data, 2026): 88 sequences, 1.3M images from a stereo RGB-inertial sensor, a monochrome camera and a SPAD single-photon camera, recorded at the SnT LunaLab. [Paper](https://www.nature.com/articles/s41597-026-06668-8) · [arXiv](https://arxiv.org/abs/2506.22956) · [Data (Zenodo)](https://zenodo.org/records/13970078) · [Code](https://github.com/spaceuma/spice-hl3)
+- **MoonPlanBench**: rover path planning benchmark, see [orbital-and-benchmarks](../mars/orbital-and-benchmarks.md).
+- **RMaM-2020**: rockfall detection tiles for the Moon and Mars. [Paper](https://www.frontiersin.org/articles/10.3389/frsen.2021.640034/full)

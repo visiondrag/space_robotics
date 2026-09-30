@@ -84,7 +84,6 @@ Companion to the [planetary robotics papers](README.md). Many recent entries are
 - Accelerating AI and Computer Vision for Satellite Pose Estimation on the Intel Myriad X Embedded SoC: [Link](https://arxiv.org/pdf/2409.12939)
 - Enabling radiation tolerant heterogeneous GPU-based onboard data processing in space (CEAS Space Journal): [Link](https://link.springer.com/article/10.1007/s12567-020-00321-9)
 - Efficient FPGA-accelerated CNNs for cloud detection on CubeSats (see also the onboard AI section): [Link](https://arxiv.org/pdf/2504.03891)
-- Context: the Intel Myriad 2 VPU flew on Φ-Sat-1 and survived 49 krad(Si) total ionizing dose in reported radiation tests.
 
 ## Lunar and deep-space navigation, optical navigation and landing
 - Deep Learning-Based Lunar Crater Terrain Relative Navigation (U-Net++ crater detector + EKF): [Link](https://arxiv.org/abs/2606.14776)

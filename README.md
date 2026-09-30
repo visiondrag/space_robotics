@@ -16,7 +16,8 @@ A curated, community-editable collection of resources for anyone who wants to be
 | [Learning](docs/learning/README.md) | Videos, courses, books, robotics and space fundamentals |
 | [Papers: planetary](docs/papers/README.md) | About 80 papers in 15 topics: terrain perception, rover autonomy, lunar SLAM, planetary VLMs, legged and cave robots, asteroids, ISRU excavation, teleoperation, debris removal, in-orbit manipulation, flight software |
 | [Papers: satellites](docs/papers/satellites.md) | About 80 papers: pose estimation, orbit determination and space traffic, telemetry anomaly detection, radiation-tolerant AI hardware, lunar and deep-space optical navigation, rendezvous and proximity ops, space object detection, attitude control with RL, star trackers and optical navigation, formation flying, onboard AI for Earth observation |
-| [Datasets](datasets/README.md) | Mars, Moon, satellite-vision and analog-field datasets with task and size |
+| [Papers: AI & VLMs](docs/papers/ai-vlm.md) | About 40 papers: planetary foundation models (SAM, DINOv2, CLIP), VLMs for spacecraft, remote-sensing VLMs, LLM agents for spacecraft operations, VLAs |
+| [Datasets](datasets/README.md) | Mars, Moon, satellite, vision-language and analog-field datasets with task and size |
 | [Tools](docs/tools/README.md) | OmniLRS, Isaac Sim, Gazebo, Basilisk, Space ROS, cFS, F Prime, SPICE, data portals |
 | [Missions & reports](docs/missions-and-reports/README.md) | NASA/ESA reports, mission documents, careers |
 | [Organizations](docs/organizations.md) | Agencies and labs to follow |
@@ -27,7 +28,7 @@ A curated, community-editable collection of resources for anyone who wants to be
 - **Perception**: terrain segmentation, traversability, monocular depth → [papers](docs/papers/README.md#terrain-segmentation-and-perception-mars), [datasets](datasets/README.md)
 - **Autonomy**: Perseverance AutoNav/ENav, MLNav → [papers](docs/papers/README.md#rover-autonomy-and-navigation)
 - **Localization**: lunar VIO/SLAM, crater landmarks → [papers](docs/papers/README.md#lunar-navigation-slam-and-perception)
-- **AI/VLMs**: Space-LLaVA, Mars-Bench, foundation models → [papers](docs/papers/README.md#foundation-models-and-vlms-for-planetary-science)
+- **AI/VLMs**: Space-LLaVA, Mars-Bench, foundation models, LLM agents → [planetary](docs/papers/README.md#foundation-models-and-vlms-for-planetary-science), [full AI page](docs/papers/ai-vlm.md)
 - **Manipulation**: on-orbit servicing, RL for free-flyers → [papers](docs/papers/README.md#space-manipulation-and-in-orbit-servicing)
 - **Locomotion**: jumping and legged robots, lava tubes, asteroid hoppers → [papers](docs/papers/README.md#legged-jumping-and-cave-robots)
 - **ISRU**: excavation, drilling, sampling → [papers](docs/papers/README.md#sampling-drilling-and-excavation-isru)

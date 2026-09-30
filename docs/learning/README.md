@@ -28,12 +28,12 @@ Suggested path: overview videos, then one robotics course and one space course, 
 - Space Mission Design and Operations (EPFL, edX): [Link](https://learning.edx.org/course/course-v1:EPFLx+EE585x+1T2021/home)
 - The Commercial Lunar Economy Field Guide: [Link](https://www.airuniversity.af.edu/Portals/10/AUPress/Books/B-186_Nayak_Lunar_Economy_Field_Guide.2.pdf)
 
-## Satellites: orbits, attitude control, GNC (books, no links; check your library)
-- Fundamentals of Astrodynamics and Applications, D. Vallado
-- Orbital Mechanics for Engineering Students, H. Curtis
-- Fundamentals of Spacecraft Attitude Determination and Control, F. L. Markley and J. L. Crassidis
-- Analytical Mechanics of Space Systems, H. Schaub and J. Junkins
-- Spacecraft Attitude Determination and Control, J. Wertz (ed.)
+## Satellites: orbits, attitude control, GNC (books)
+- Fundamentals of Astrodynamics and Applications, D. Vallado: [Link](https://books.google.com/books/about/Fundamentals_of_Astrodynamics_and_Applic.html?id=PJLlWzMBKjkC)
+- Orbital Mechanics for Engineering Students, H. Curtis: [Link](https://shop.elsevier.com/books/orbital-mechanics-for-engineering-students/curtis/978-0-12-824025-0)
+- Fundamentals of Spacecraft Attitude Determination and Control, F. L. Markley and J. L. Crassidis: [Link](https://link.springer.com/book/10.1007/978-1-4939-0802-8)
+- Analytical Mechanics of Space Systems, H. Schaub and J. Junkins: [Link](https://arc.aiaa.org/doi/book/10.2514/4.105210)
+- Spacecraft Attitude Determination and Control, J. Wertz (ed.): [Link](https://link.springer.com/book/10.1007/978-94-009-9907-7)
 
 ## Space computer vision
 - Read the survey [Computer vision tasks for intelligent aerospace missions](https://arxiv.org/pdf/2407.06513) first, then the [pose estimation survey](https://arxiv.org/pdf/2305.07348), then try the SPEED+ dataset.
