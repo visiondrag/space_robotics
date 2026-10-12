@@ -5,25 +5,25 @@ Datasets for planetary perception and navigation, sorted by body. Check each dat
 ## Mars
 | Name | Data | Task | Details |
 |---|---|---|---|
-| AI4Mars | About 35,000 rover images (Curiosity, Opportunity, Spirit), 4 terrain classes | Terrain-aware segmentation | [mars/AI4Mars.md](mars/AI4Mars.md) |
-| MarsScapes | 195 panoramas, 9 classes | Semantic and instance segmentation | [mars/MarsScapes.md](mars/MarsScapes.md) |
-| S5Mars | 6K high-resolution images, sparse labels | Semi-supervised segmentation | [mars/S5Mars.md](mars/S5Mars.md) |
-| Curiosity surface images | Curiosity images | Classification | [mars/Curiosity_surface_images.md](mars/Curiosity_surface_images.md) |
-| MarsData-V2 | 8,390 labeled 512×512 Mastcam images | Rock segmentation | [mars/MarsData_Mars-Bench.md](mars/MarsData_Mars-Bench.md) |
-| Mars-Bench | 20 datasets, orbital and surface | Classification, segmentation, detection | [mars/MarsData_Mars-Bench.md](mars/MarsData_Mars-Bench.md) |
-| MarsPlanBench | Terrain maps for path planning | Rover path planning | [mars/orbital-and-benchmarks.md](mars/orbital-and-benchmarks.md) |
-| HiRISE boulders, CTX landforms, RMaM rockfall, MCTED | Orbital imagery | Segmentation, classification, DEM generation | [mars/orbital-and-benchmarks.md](mars/orbital-and-benchmarks.md) |
-| Tianwen-1 segmentation | Mars surface images | Segmentation | [misc-links.md](misc-links.md) |
+| AI4Mars | About 35,000 rover images (Curiosity, Opportunity, Spirit), 4 terrain classes | Terrain-aware segmentation | [Details](mars/AI4Mars.md) |
+| MarsScapes | 195 panoramas, 9 classes | Semantic and instance segmentation | [Details](mars/MarsScapes.md) |
+| S5Mars | 6K high-resolution images, sparse labels | Semi-supervised segmentation | [Details](mars/S5Mars.md) |
+| Curiosity surface images | Curiosity images | Classification | [Details](mars/Curiosity_surface_images.md) |
+| MarsData-V2 | 8,390 labeled 512×512 Mastcam images | Rock segmentation | [Details](mars/MarsData_Mars-Bench.md) |
+| Mars-Bench | 20 datasets, orbital and surface | Classification, segmentation, detection | [Details](mars/MarsData_Mars-Bench.md) |
+| MarsPlanBench | Terrain maps for path planning | Rover path planning | [Details](mars/orbital-and-benchmarks.md) |
+| HiRISE boulders, CTX landforms, RMaM rockfall, MCTED | Orbital imagery | Segmentation, classification, DEM generation | [Details](mars/orbital-and-benchmarks.md) |
+| Tianwen-1 segmentation | Mars surface images | Segmentation | [Details](misc-links.md) |
 
 ## Moon
 | Name | Data | Task | Details |
 |---|---|---|---|
-| LuSNAR | Simulated stereo, semantic labels, depth, LiDAR (9 Unreal Engine scenes) | Segmentation, navigation, reconstruction | [moon/lunar-datasets.md](moon/lunar-datasets.md) |
-| POLAR-Sim | About 2,600 HDR stereo pairs, 13 terrain scenarios (NASA POLAR) | Perception, rover simulation | [moon/lunar-datasets.md](moon/lunar-datasets.md) |
-| LuMon | Chang'e-3 stereo ground truth, CHERI dark analog | Monocular depth | [moon/lunar-datasets.md](moon/lunar-datasets.md) |
-| MoonAnything | Large-scale lunar supervised data | Vision benchmark | [moon/lunar-datasets.md](moon/lunar-datasets.md) |
-| [MoonPlanBench](https://arxiv.org/abs/2512.21438), [SPICE-HL3](https://www.nature.com/articles/s41597-026-06668-8), [RMaM-2020](https://www.frontiersin.org/articles/10.3389/frsen.2021.640034/full) | Planning maps, single-photon and stereo, rockfall tiles | Planning, perception | [moon/lunar-datasets.md](moon/lunar-datasets.md) |
-| Real change lunar landscape, LPI lunar surface | Imagery | Change detection / reference | [misc-links.md](misc-links.md) |
+| LuSNAR | Simulated stereo, semantic labels, depth, LiDAR (9 Unreal Engine scenes) | Segmentation, navigation, reconstruction | [Details](moon/lunar-datasets.md) |
+| POLAR-Sim | About 2,600 HDR stereo pairs, 13 terrain scenarios (NASA POLAR) | Perception, rover simulation | [Details](moon/lunar-datasets.md) |
+| LuMon | Chang'e-3 stereo ground truth, CHERI dark analog | Monocular depth | [Details](moon/lunar-datasets.md) |
+| MoonAnything | Large-scale lunar supervised data | Vision benchmark | [Details](moon/lunar-datasets.md) |
+| [MoonPlanBench](https://arxiv.org/abs/2512.21438), [SPICE-HL3](https://www.nature.com/articles/s41597-026-06668-8), [RMaM-2020](https://www.frontiersin.org/articles/10.3389/frsen.2021.640034/full) | Planning maps, single-photon and stereo, rockfall tiles | Planning, perception | [Details](moon/lunar-datasets.md) |
+| Real change lunar landscape, LPI lunar surface | Imagery | Change detection / reference | [Details](misc-links.md) |
 
 ## Satellite and orbital vision
 | Name | Data | Task |
@@ -33,7 +33,7 @@ Datasets for planetary perception and navigation, sorted by body. Check each dat
 | [Non-cooperative target benchmark](https://www.nature.com/articles/s41597-025-06056-8) | Large-scale synthetic | Target perception |
 | [ESA-ADB](https://arxiv.org/pdf/2406.17826), [OPS-SAT](https://arxiv.org/pdf/2407.04730), [SMAP/MSL](https://arxiv.org/pdf/1802.04431) | Real satellite and rover telemetry | Anomaly detection |
 
-Details: [satellite/spacecraft-vision.md](satellite/spacecraft-vision.md)
+Details: [satellite and spacecraft datasets](satellite/spacecraft-vision.md)
 
 ## Vision-language and multimodal datasets
 | Name | Domain | Use |
