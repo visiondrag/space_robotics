@@ -1,15 +1,12 @@
-# Papers
+# Papers: planetary and surface robotics
 
-**Two areas:** this page covers **planetary and surface robotics** (rovers, legged, ISRU, VLMs). For **AI, foundation models, VLMs and LLM agents** see [ai-vlm.md](ai-vlm.md). For **satellites, spacecraft GNC, attitude control, proximity operations and space computer vision** see [satellites.md](satellites.md).
+Curated literature on rovers, lunar and Mars perception, legged and cave robots, asteroids, ISRU, teleoperation and flight software. Looking for something else? See [satellites, spacecraft control and space computer vision](satellites.md) or [AI, foundation models, VLMs and LLM agents](ai-vlm.md).
 
-Curated literature for space robotics, grouped by topic. Entries marked **File** have a local copy in [`library/papers/`](../../library/papers/); the rest are links only (IEEE papers are not redistributed). Many recent entries are preprints and have not been peer reviewed. See [CONTRIBUTING.md](../../CONTRIBUTING.md) to add one.
+**New to the field?** Start with the Space ROS flight software paper and the Perseverance autonomy article for the big picture, then terrain traversability, then the survey of on-orbit servicing manipulators.
 
-**Suggested reading order for newcomers:** the flight software paper (Space ROS) and the Perseverance autonomy article for the big picture, then the terrain traversability section, then the survey of on-orbit servicing manipulators.
-
-Local PDFs live in [`library/papers/`](../../library/papers/). Add new entries in the format: title — why it matters — file / link.
+Entries with a **PDF in repo** badge have a local copy in the [library](../../library/). IEEE papers are link-only. Many recent entries are preprints and have not been peer reviewed. To add an entry, see [CONTRIBUTING](../../CONTRIBUTING.md).
 
 ## Terrain traversability
-Local copies exist only for freely redistributable papers; IEEE papers are link-only.
 - On terrain traversability analysis in unstructured environments: recent advances in forest applications (CC BY 4.0 open access; forest-focused, methods transfer to planetary terrain): [File](../../library/papers/Terrain_Traversability_Forest_Review_2025.pdf) - [Link](https://link.springer.com/article/10.1007/s11370-025-00591-4)
 - TACS-Graphs: Traversability-Aware Consistent Scene Graphs for Ground Robot Indoor Localization and Mapping: [File](../../library/papers/TACS-Graphs_2025.pdf) - [Link](https://arxiv.org/abs/2506.14178)
 - Stereo Vision and Rover Navigation Software for Planetary Exploration: [Link](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1035370)
@@ -117,11 +114,10 @@ Local copies exist only for freely redistributable papers; IEEE papers are link-
 ## Space resources and mining
 - Mining beyond Earth with Space Robots: Exploration, Sampling, and Extraction: [Link](https://arxiv.org/pdf/2608.21358)
 
-## Datasets (papers)
+## Dataset papers
 - The Katwijk beach planetary rover dataset (IJRR): [Link](https://dl.acm.org/doi/abs/10.1177/0278364917737153)
-- Mars-Bench, LuSNAR, POLAR-Sim, LuMon and MoonAnything are described in [datasets/](../../datasets/README.md).
 
 ## Research directions (VLMs / VLAs / efficient inference)
-- More on foundation models, remote-sensing VLMs, LLM agents for spacecraft and VLAs: [ai-vlm.md](ai-vlm.md)
+- More on foundation models, remote-sensing VLMs, LLM agents for spacecraft and VLAs: [AI, VLMs and agents page](ai-vlm.md)
 - [VLAs for driving](vlas-for-driving.md)
 - [Efficient inference](efficient-inference.md)
