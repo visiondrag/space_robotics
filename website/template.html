@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9' fill='%23e8743b'/%3E%3Cellipse cx='16' cy='16' rx='15' ry='5' fill='none' stroke='%237fb5ff' stroke-width='2' transform='rotate(-20 16 16)'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="{{PREFIX}}static/style.css">
+<script>
+(function(){try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}})();
+</script>
+</head>
+<body class="{{CLASS}}" data-prefix="{{PREFIX}}">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <button class="icon-btn menu" id="menu-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebar">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+  </button>
+  <a class="brand" href="{{PREFIX}}index.html"><span class="logo" aria-hidden="true"></span><span class="t">{{SITE}}</span></a>
+  <div class="search-wrap">
+    <input id="search" type="search" placeholder="Search papers, datasets, tools…  ( / )" autocomplete="off" aria-label="Search" role="combobox" aria-expanded="false" aria-controls="results">
+    <div id="results" class="results" role="listbox" hidden></div>
+  </div>
+  <button class="icon-btn" id="theme-btn" aria-label="Toggle light and dark theme">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="currentColor"/></svg>
+  </button>
+  <a class="icon-btn gh" href="{{REPO}}" target="_blank" rel="noopener" aria-label="GitHub repository">
+    <svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+  </a>
+</header>
+<div class="shell">
+  <aside class="sidebar" id="sidebar" aria-label="Site navigation">
+    <nav>{{NAV}}</nav>
+    <p class="side-foot">Curated resources. Links collected from public sources; see the <a href="{{REPO}}/blob/main/LICENSE" target="_blank" rel="noopener">license</a>.</p>
+  </aside>
+  <main id="main" class="main">
+    {{BODY}}
+    <footer class="page-foot">
+      <a href="{{EDIT}}" target="_blank" rel="noopener">Edit this page on GitHub</a>
+      <span>·</span>
+      <a href="{{REPO}}/issues/new?template=suggest-resource.md" target="_blank" rel="noopener">Suggest a resource</a>
+    </footer>
+  </main>
+  <div class="toc-col">{{TOC}}</div>
+</div>
+<script src="{{PREFIX}}static/app.js" defer></script>
+</body>
+</html>

@@ -43,6 +43,9 @@ A curated, community-editable collection of resources for anyone who wants to be
 - **Onboard AI**: Φ-Sat, cloud detection, TinyML on CubeSats → [papers](docs/papers/satellites.md#onboard-ai-and-earth-observation)
 - **Software**: Space ROS, cFS, F Prime → [tools](docs/tools/README.md)
 
+## Website
+This repository also builds a searchable website with GitHub Pages; see [website/README.md](https://github.com/visiondrag/space_robotics/blob/main/website/README.md).
+
 ## Contributing
 Contributions are welcome: see [CONTRIBUTING.md](CONTRIBUTING.md). Link checking runs weekly through GitHub Actions.
 
