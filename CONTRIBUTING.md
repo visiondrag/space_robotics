@@ -1,7 +1,7 @@
 # Contributing
 
 ## Entry format
-- **Paper**: `- Title (why it matters, optional): [Link](url)`, plus `[File](path)` if a copy is in `library/papers/`.
+- **Paper**: `- Title (why it matters, optional): [Link](url) - [Code](https://github.com/...) · *Venue Year*`. Add `[Code]` only when the paper or authors link a repository, and the venue only when an official source states it (leave it off for preprints). Add `[File](path)` if a copy is in `library/papers/`.
 - **Dataset**: add a row to `datasets/README.md` with data, task and size, and a note in `datasets/mars/` or `datasets/moon/`.
 - **Tool**: add a row to `docs/tools/README.md` with one line on what it is.
 
