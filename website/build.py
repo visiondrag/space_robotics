@@ -26,7 +26,7 @@ NAV = [
     ("Explore all", "@explore"),
     ("Learning", "docs/learning/README.md"),
     ("Papers", [
-        "docs/papers/README.md", "docs/papers/satellites.md", "docs/papers/ai-vlm.md",
+        "docs/papers/README.md", "docs/papers/satellites.md", "docs/papers/ai-vlm.md", "docs/papers/weekly-picks.md",
         "docs/papers/vlas-for-driving.md", "docs/papers/efficient-inference.md"]),
     ("Datasets", [
         "datasets/README.md", "datasets/mars/AI4Mars.md", "datasets/mars/MarsScapes.md",
@@ -44,7 +44,7 @@ NAV = [
 SHORT = {
     "README.md": "Home", "docs/papers/README.md": "Planetary & surface robotics",
     "docs/papers/satellites.md": "Satellites & orbital", "docs/papers/ai-vlm.md": "AI, VLMs & agents",
-    "docs/papers/vlas-for-driving.md": "VLAs for driving", "docs/papers/efficient-inference.md": "Efficient inference",
+    "docs/papers/vlas-for-driving.md": "VLAs for driving", "docs/papers/weekly-picks.md": "Weekly picks: AI for space", "docs/papers/efficient-inference.md": "Efficient inference",
     "datasets/README.md": "Overview", "datasets/mars/AI4Mars.md": "AI4Mars", "datasets/mars/MarsScapes.md": "MarsScapes",
     "datasets/mars/S5Mars.md": "S5Mars", "datasets/mars/Curiosity_surface_images.md": "Curiosity images",
     "datasets/mars/MarsData_Mars-Bench.md": "MarsData & Mars-Bench", "datasets/mars/orbital-and-benchmarks.md": "Mars orbital & benchmarks",
@@ -57,6 +57,7 @@ KIND = {  # path prefix -> (type, area)
     "docs/papers/satellites.md": ("paper", "satellites"),
     "docs/papers/ai-vlm.md": ("paper", "ai"),
     "docs/papers/vlas-for-driving.md": ("paper", "ai"),
+    "docs/papers/weekly-picks.md": ("paper", "satellites"),
     "docs/papers/efficient-inference.md": ("paper", "ai"),
     "docs/papers/README.md": ("paper", "planetary"),
     "datasets/satellite/": ("dataset", "satellites"),
@@ -417,9 +418,9 @@ def jump_chips(pg):
     return f'<nav class="jump" aria-label="Topics on this page">{chips}</nav>'
 
 # ---------------------------------------------------------------- special pages
-def home_body(pages, entries):
+def home_body(pages, entries, all_entries):
     def count(types=None, area=None):
-        return len([e for e in entries if (not types or e["type"] in types) and (not area or e["area"] == area)])
+        return len([e for e in all_entries if (not types or e["type"] in types) and (not area or e["area"] == area)])
     stats = [(count({"paper"}), "papers & references"), (count({"dataset"}), "dataset entries"),
              (count({"tool"}), "tools & portals"), (count({"competition"}), "competitions")]
     chips = "".join(f'<li><b>{v}</b><span>{html.escape(l)}</span></li>' for v, l in stats)
@@ -432,8 +433,8 @@ def home_body(pages, entries):
     area_cards = ""
     for key, (name, desc, path) in AREAS.items():
         pg = pages[path]
-        n = len([e for e in entries if e["area"] == key and e["type"] == "paper"])
-        d = len([e for e in entries if e["area"] == key and e["type"] == "dataset"])
+        n = len([e for e in all_entries if e["area"] == key and e["type"] == "paper"])
+        d = len([e for e in all_entries if e["area"] == key and e["type"] == "dataset"])
         secs = [s for s in pg.sections if s[2] > 0][:5]
         links = "".join(f'<a href="{pg.url}#{s[0]}">{html.escape(s[1])}</a>' for s in secs)
         area_cards += (f'<article class="area" data-area="{key}"><h3><a href="{pg.url}">{html.escape(name)}</a></h3>'
@@ -551,11 +552,19 @@ def main():
     if errors:
         print("\n".join(sorted(set(errors)))); sys.exit(1)
 
-    entries = [e for pg in pages.values() for e in pg.entries]
+    all_entries = [e for pg in pages.values() for e in pg.entries if not pg.path.endswith("weekly-picks.md")]
+    entries, seen = [], set()
+    for pg in sorted(pages.values(), key=lambda q: q.path.endswith("weekly-picks.md")):  # topic pages win over the weekly list
+        for e in pg.entries:
+            key = e["primary"][1] if e["primary"] and e["primary"][1].startswith("http") else None
+            if key and key in seen:
+                continue
+            if key: seen.add(key)
+            entries.append(e)
     for pg in pages.values():
         home = pg.path == "README.md"
         if home:
-            body = home_body(pages, entries); toc = []
+            body = home_body(pages, entries, all_entries); toc = []
         else:
             head = re.match(r"^\s*(<h1[^>]*>.*?</h1>)", pg.html, re.S)
             h1 = head.group(1) if head else ""

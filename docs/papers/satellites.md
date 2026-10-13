@@ -1,6 +1,6 @@
 # Papers: satellites, orbital robotics and space computer vision
 
-Companion to the [planetary robotics papers](README.md). Many recent entries are preprints. See also [satellite datasets](../../datasets/README.md#satellite-and-orbital-vision).
+Also see the [weekly picks on AI for space](weekly-picks.md). Companion to the [planetary robotics papers](README.md). Many recent entries are preprints. See also [satellite datasets](../../datasets/README.md#satellite-and-orbital-vision).
 
 ## Surveys and overviews
 - Computer vision tasks for intelligent aerospace missions: An overview: [Link](https://arxiv.org/pdf/2407.06513)
@@ -19,6 +19,8 @@ Companion to the [planetary robotics papers](README.md). Many recent entries are
 - High-accuracy real-time satellite pose estimation for in-orbit applications (Chinese J. Aeronautics): [Link](https://www.sciencedirect.com/science/article/pii/S1000936125000640)
 - Trajectory Design and Guidance for Far-range Proximity Operations of Active Debris Removal Missions with Angles-only Navigation: [Link](https://arxiv.org/html/2411.01021v1)
 - Current state of the multi-agent multi-view experimental and digital twin rendezvous (MMEDR-Autonomous) framework: [Link](https://arxiv.org/pdf/2603.20575)
+- DreamSat-Bench: Development and Initial Testing of a Testbed for AI-Based Pose Estimation from 3D Reconstruction: [Link](https://arxiv.org/abs/2609.14183)
+- DreamSat-Pose: Spacecraft Pose Estimation from Single-View 3D Reconstructions and Learned 2D-3D Feature Matching: [Link](https://arxiv.org/abs/2607.13449)
 
 ## Space object detection, recognition and situational awareness
 - SPARK: SPAcecraft Recognition leveraging Knowledge of Space Environment: [Link](https://arxiv.org/html/2104.05978)
@@ -35,6 +37,7 @@ Companion to the [planetary robotics papers](README.md). Many recent entries are
 - Deep Reinforcement Learning for Spacecraft Attitude Control During Atmospheric Re-Entry: [Link](https://arxiv.org/pdf/2606.31291)
 - Reinforcement learning-based satellite formation attitude control under multi-constraint: [Link](https://www.sciencedirect.com/science/article/abs/pii/S0273117724008032)
 - Transformers for Trajectory Optimization with Application to Spacecraft Rendezvous: [Link](https://arxiv.org/pdf/2310.13831)
+- Orbit-Planner: Towards Latent World Models for On-Orbit Obstacle Avoidance of Satellite Agents: [Link](https://arxiv.org/abs/2608.16651)
 
 ## Star trackers, optical and celestial navigation
 - Satellite celestial navigation using star-tracker and earth sensor (IEEE): [Link](https://ieeexplore.ieee.org/document/7364961/)
@@ -74,6 +77,7 @@ Companion to the [planetary robotics papers](README.md). Many recent entries are
 - The OPS-SAT benchmark for detecting anomalies in satellite telemetry: [Link](https://arxiv.org/pdf/2407.04730)
 - A Hierarchical Ensemble Pipeline for Anomaly Detection in ESA Satellite Telemetry: [Link](https://arxiv.org/pdf/2605.06681)
 - Explainable anomaly detection in spacecraft telemetry: [Link](https://dl.acm.org/doi/10.1016/j.engappai.2024.108083)
+- Structure-Aware Unsupervised Anomaly Detection for Spacecraft Telemetry with Adaptive EVT Thresholding: [Link](https://arxiv.org/abs/2609.10017)
 - Physics-Informed Real NVP for Satellite Power System Fault Detection: [Link](https://arxiv.org/pdf/2405.17339)
 - Convolutional Neural Network Design and Evaluation for Real-Time Multivariate Time Series Fault Detection in Spacecraft Attitude Sensors: [Link](https://arxiv.org/pdf/2410.09126)
 
@@ -97,6 +101,15 @@ Companion to the [planetary robotics papers](README.md). Many recent entries are
 - Cislunar Navigation Accuracy Using Optical Observations of Natural and Artificial Targets: [Link](https://arc.aiaa.org/doi/10.2514/1.A34694)
 - Optical Deep-Space Instrument for Navigation (ODIN): [Link](https://ntrs.nasa.gov/api/citations/20240012072/downloads/Optical_Deep_space_Instrument_for_Navigation.pdf)
 - Autonomous optical navigation for interplanetary missions: [Link](https://www.researchgate.net/publication/252328363_Autonomous_optical_navigation_for_interplanetary_missions)
+
+## Space situational awareness and sensor tasking
+- VISTA: An Attention-Based Multi-Agent Reinforcement Learning Architecture for Space Situational Awareness Sensor Tasking: [Link](https://arxiv.org/abs/2609.23875) - [Code](https://github.com/RocketNeurons/VISTA-SSA)
+- Space-Based Sensor Tasking Using Deep Reinforcement Learning (Journal of the Astronautical Sciences): [Link](https://link.springer.com/article/10.1007/s40295-022-00354-8)
+- Scalable Multi-Agent Sensor Tasking Using Deep Reinforcement Learning: [Link](https://www.researchgate.net/publication/374840881_Scalable_Multi-Agent_Sensor_Tasking_Using_Deep_Reinforcement_Learning)
+- Multi-Spacecraft Predictive Sensor Tasking for Cislunar Space Situational Awareness: [Link](https://arxiv.org/pdf/2310.04894)
+
+## In-orbit inspection
+- Markerless Multi-Modal Autonomous Robotic Inspection of Large Space Structures: [Link](https://arxiv.org/abs/2609.29644)
 
 ## In-orbit manipulation and servicing
 See the manipulation, servicing and debris sections in the [main papers page](README.md#space-manipulation-and-in-orbit-servicing).
