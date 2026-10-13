@@ -30,6 +30,8 @@ Datasets for planetary perception and navigation, sorted by body. Check each dat
 |---|---|---|
 | [SPEED / SPEED+](https://purl.stanford.edu/wv398fc4383) | Synthetic and hardware-in-the-loop images of Tango (about 60k synthetic + 9.5k HIL) | 6D pose estimation, domain gap |
 | [SPARK](https://arxiv.org/html/2104.05978) / [SPARK 2024](https://cvi2.uni.lu/spark2024/) | About 150k RGB+depth images, 11 classes; real Zero-G lab sequences | Space object detection, segmentation, trajectory estimation |
+| [SpaceSense-Bench](https://arxiv.org/abs/2603.09320) | Large-scale multi-modal spacecraft data | Perception, pose estimation |
+| [MAD-LEO](https://arxiv.org/abs/2609.08556) | Maneuver-annotated orbital data for LEO satellites | Maneuver and orbit analysis |
 | [Non-cooperative target benchmark](https://www.nature.com/articles/s41597-025-06056-8) | Large-scale synthetic | Target perception |
 | [ESA-ADB](https://arxiv.org/pdf/2406.17826), [OPS-SAT](https://arxiv.org/pdf/2407.04730), [SMAP/MSL](https://arxiv.org/pdf/1802.04431) | Real satellite and rover telemetry | Anomaly detection |
 

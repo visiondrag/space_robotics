@@ -7,6 +7,9 @@
 - **SPARK 2024**: trajectory estimation stream with 100 synthetic trajectories of 300 images and four real sequences (2,100 images) from the SnT Zero-G lab. [Challenge](https://cvi2.uni.lu/spark2024/)
 - **Non-cooperative space target perception benchmark** (Scientific Data, large-scale synthetic). [Paper](https://www.nature.com/articles/s41597-025-06056-8)
 
+- **SpaceSense-Bench**: large-scale multi-modal benchmark for spacecraft perception and pose estimation. [Paper](https://arxiv.org/abs/2603.09320)
+- **MAD-LEO**: maneuver-annotated orbital dataset for LEO satellites with tiered multi-source evidence. [Paper](https://arxiv.org/abs/2609.08556)
+
 ## Telemetry anomaly detection
 - **ESA-ADB**: annotated real telemetry from three ESA missions, with irregular sampling, gaps, redundant channels and low anomaly density. [Paper](https://arxiv.org/pdf/2406.17826)
 - **OPS-SAT benchmark**: anomaly detection in telemetry from ESA's OPS-SAT. [Paper](https://arxiv.org/pdf/2407.04730)

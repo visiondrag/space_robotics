@@ -130,7 +130,7 @@
   // explore-all page
   var ex = $("#explorer");
   if (ex) {
-    var AREAS = { planetary: "Planetary", satellites: "Satellites", ai: "AI & VLMs", general: "General" };
+    var AREAS = { planetary: "Planetary", satellites: "Satellites", weather: "Space weather", ai: "AI & VLMs", general: "General" };
     var TYPES = { paper: "Papers", dataset: "Datasets", tool: "Tools", learning: "Learning", competition: "Competitions", report: "Reports", org: "Organizations" };
     var st = { q: "", area: "", type: "", src: "", sort: "rel", n: 40 };
     var params = new URLSearchParams(location.search);

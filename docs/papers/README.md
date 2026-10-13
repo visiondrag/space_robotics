@@ -1,6 +1,6 @@
 # Papers: planetary and surface robotics
 
-Curated literature on rovers, lunar and Mars perception, legged and cave robots, asteroids, ISRU, teleoperation and flight software. Looking for something else? See [satellites, spacecraft control and space computer vision](satellites.md) or [AI, foundation models, VLMs and LLM agents](ai-vlm.md).
+Curated literature on rovers, lunar and Mars perception, legged and cave robots, asteroids, ISRU, teleoperation and flight software. Looking for something else? See [spacecraft guidance and control](spacecraft-gnc.md), [spacecraft vision and onboard AI](satellites.md), [space weather](space-weather.md), or [AI, foundation models, VLMs and LLM agents](ai-vlm.md).
 
 Thanks to [Victor Rodriguez-Fernandez](https://www.linkedin.com/in/vrodriguezf90/) for his weekly arXiv picks on AI for space, which are a great source of papers for this list.
 
@@ -14,6 +14,7 @@ Entries with a **PDF in repo** badge have a local copy in the [library](../../li
 - Stereo Vision and Rover Navigation Software for Planetary Exploration: [Link](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1035370)
 - Visual Traversability Analysis for Micro Planetary Rover: [Link](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5420494)
 - Soft Computing for Visual Terrain Perception and Traversability Assessment by Planetary Robotic Systems: [Link](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1571416)
+- Fleet-To-Lab: A Transfer Learning Framework For Lunar Rover Slippage Estimation Via Model Fusion: [Link](https://arxiv.org/abs/2609.17187)
 
 ## Lunar exploration
 - Lunar Twins: We Choose to Go to the Moon with Large Language Models: [File](../../library/papers/Lunar_Twins_LLMs_2025.pdf) - [Link](https://aclanthology.org/2025.findings-acl.69.pdf)
@@ -57,6 +58,7 @@ Entries with a **PDF in repo** badge have a local copy in the [library](../../li
 - A Domain-Specific Vision Foundation Model for Mars (JGR: Machine Learning and Computation): [Link](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2025JH000827)
 - Vision Foundation Models for Domain Generalisable Cross-View Localisation in Planetary Ground-Aerial Robotic Teams: [Link](https://arxiv.org/pdf/2601.09107)
 - Martian World Models: Controllable Video Synthesis with Physically Accurate 3D Reconstructions: [Link](https://arxiv.org/html/2507.07978v1)
+- Adapting a Foundation Model for Lunar Surface Height Estimation: [Link](https://arxiv.org/abs/2609.02448)
 
 ## Space manipulation and in-orbit servicing
 - A comprehensive survey of space robotic manipulators for on-orbit servicing: [Link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11496037/)
@@ -67,6 +69,9 @@ Entries with a **PDF in repo** badge have a local copy in the [library](../../li
 - Leveraging Procedural Generation for Learning Autonomous Peg-in-Hole Assembly in Space: [Link](https://arxiv.org/pdf/2405.01134)
 - APIARY: Autonomous Planning In-space Assembly Reinforcement-learning free-flYer, ISS Astrobee testing: [Link](https://arxiv.org/pdf/2512.03729)
 - SmallSatSim: A GPU-Accelerated Microgravity Robotics Toolkit for Planning, Control, and Policy Learning: [Link](https://arxiv.org/pdf/2603.14598)
+- Markerless Multi-Modal Autonomous Robotic Inspection of Large Space Structures: [Link](https://arxiv.org/abs/2609.29644)
+- Transformer-Based Warm-Starting for Feasible and Optimal Terminal Approach to Tumbling Objects with Space Manipulators: [Link](https://arxiv.org/abs/2606.17317)
+- Learning Smooth and Robust Space Robotic Manipulation of Dynamic Target via Inter-frame Correlation: [Link](https://arxiv.org/abs/2603.27537)
 
 ## Legged, jumping and cave robots
 - Martian Lava Tube Exploration Using Jumping Legged Robots: A Concept Study: [Link](https://arxiv.org/abs/2310.14876)
@@ -75,6 +80,7 @@ Entries with a **PDF in repo** badge have a local copy in the [library](../../li
 - Efficient Learning-Based Control of a Legged Robot in Lunar Gravity: [Link](https://arxiv.org/pdf/2509.10128)
 - Locomotion as Manipulation with ReachBot (extendable booms for caves and lava tubes): [Link](https://arxiv.org/html/2407.00973)
 - Cooperative robotic exploration of a planetary skylight surface and lava cave (Science Robotics): [Link](https://www.science.org/doi/10.1126/scirobotics.adj9699)
+- Terrain-Aware Autonomous Planetary Exploration for Exteroceptive-Proprioceptive Mapping with Quadruped Scouts: [Link](https://arxiv.org/abs/2609.35493)
 
 ## Asteroids and small bodies
 - Mobility and Science operations On An Asteroid Using a Hopping Small Spacecraft on Stilts: [Link](https://arxiv.org/pdf/1801.09482)
@@ -107,6 +113,8 @@ Entries with a **PDF in repo** badge have a local copy in the [library](../../li
 
 ## Simulation
 - Simulation for Planetary Robotic Perception and Autonomy: A Concise Survey of Recent Capabilities and Gaps: [Link](https://arxiv.org/html/2609.34743)
+- MarsLab: A Martian Rover Simulator for Planetary Rover Autonomous Navigation: [Link](https://arxiv.org/abs/2609.34702)
+- mjorbit: A Simulation Framework for Space Robotics: [Link](https://arxiv.org/abs/2609.08010)
 
 ## Flight software and frameworks
 - Space ROS: An Open-Source Framework for Space Robotics and Flight Software (AIAA SciTech 2023): [Link](https://ntrs.nasa.gov/citations/20220017761)

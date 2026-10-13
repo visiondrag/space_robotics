@@ -26,8 +26,8 @@ NAV = [
     ("Explore all", "@explore"),
     ("Learning", "docs/learning/README.md"),
     ("Papers", [
-        "docs/papers/README.md", "docs/papers/satellites.md", "docs/papers/ai-vlm.md",
-        "docs/papers/vlas-for-driving.md", "docs/papers/efficient-inference.md"]),
+        "docs/papers/README.md", "docs/papers/spacecraft-gnc.md", "docs/papers/satellites.md",
+        "docs/papers/space-weather.md", "docs/papers/ai-vlm.md", "docs/papers/vlas-for-driving.md", "docs/papers/efficient-inference.md"]),
     ("Datasets", [
         "datasets/README.md", "datasets/mars/AI4Mars.md", "datasets/mars/MarsScapes.md",
         "datasets/mars/S5Mars.md", "datasets/mars/Curiosity_surface_images.md",
@@ -43,7 +43,8 @@ NAV = [
 ]
 SHORT = {
     "README.md": "Home", "docs/papers/README.md": "Planetary & surface robotics",
-    "docs/papers/satellites.md": "Satellites & orbital", "docs/papers/ai-vlm.md": "AI, VLMs & agents",
+    "docs/papers/satellites.md": "Spacecraft vision & onboard AI", "docs/papers/spacecraft-gnc.md": "Guidance, navigation & control",
+    "docs/papers/space-weather.md": "Space weather", "docs/papers/ai-vlm.md": "AI, VLMs & agents",
     "docs/papers/vlas-for-driving.md": "VLAs for driving", "docs/papers/efficient-inference.md": "Efficient inference",
     "datasets/README.md": "Overview", "datasets/mars/AI4Mars.md": "AI4Mars", "datasets/mars/MarsScapes.md": "MarsScapes",
     "datasets/mars/S5Mars.md": "S5Mars", "datasets/mars/Curiosity_surface_images.md": "Curiosity images",
@@ -55,6 +56,8 @@ SHORT = {
 # which pages render resource bullets as cards, and what kind/area they are
 KIND = {  # path prefix -> (type, area)
     "docs/papers/satellites.md": ("paper", "satellites"),
+    "docs/papers/spacecraft-gnc.md": ("paper", "satellites"),
+    "docs/papers/space-weather.md": ("paper", "weather"),
     "docs/papers/ai-vlm.md": ("paper", "ai"),
     "docs/papers/vlas-for-driving.md": ("paper", "ai"),
     "docs/papers/efficient-inference.md": ("paper", "ai"),
@@ -71,11 +74,12 @@ KIND = {  # path prefix -> (type, area)
 }
 NO_ENTRIES = {"README.md", "CONTRIBUTING.md"}
 AREAS = {
-    "planetary": ("Planetary & surface robotics", "Rovers, landers, legged and cave robots, ISRU, lunar and Mars perception.", "docs/papers/README.md"),
-    "satellites": ("Satellites & orbital systems", "Pose estimation, proximity operations, attitude control, orbit determination, onboard AI.", "docs/papers/satellites.md"),
-    "ai": ("AI, VLMs & agents", "Foundation models, vision-language models, LLM agents and VLAs for space and driving.", "docs/papers/ai-vlm.md"),
+    "planetary": ("Planetary & surface robotics", "Rovers, landers, legged and cave robots, ISRU, lunar and Mars perception.", ["docs/papers/README.md"]),
+    "satellites": ("Satellites & orbital systems", "Rendezvous, attitude and orbit control, spacecraft vision, situational awareness, onboard AI.", ["docs/papers/spacecraft-gnc.md", "docs/papers/satellites.md"]),
+    "weather": ("Space weather", "Solar wind and geomagnetic forecasting, CME detection, upper-atmosphere modelling.", ["docs/papers/space-weather.md"]),
+    "ai": ("AI, VLMs & agents", "Foundation models, vision-language models, LLM agents and VLAs for space and driving.", ["docs/papers/ai-vlm.md"]),
 }
-AREA_SHORT = {"planetary": "planetary", "satellites": "satellite", "ai": "AI & VLM"}
+AREA_SHORT = {"planetary": "planetary", "satellites": "satellite", "weather": "space weather", "ai": "AI & VLM"}
 SKIP_TILES = {"dataset papers", "research directions (vlms / vlas / efficient inference)"}
 TYPES = {"paper": "Papers", "dataset": "Datasets", "tool": "Tools", "learning": "Learning", "competition": "Competitions",
          "report": "Reports", "org": "Organizations"}
@@ -417,9 +421,9 @@ def jump_chips(pg):
     return f'<nav class="jump" aria-label="Topics on this page">{chips}</nav>'
 
 # ---------------------------------------------------------------- special pages
-def home_body(pages, entries):
+def home_body(pages, entries, all_entries):
     def count(types=None, area=None):
-        return len([e for e in entries if (not types or e["type"] in types) and (not area or e["area"] == area)])
+        return len([e for e in all_entries if (not types or e["type"] in types) and (not area or e["area"] == area)])
     stats = [(count({"paper"}), "papers & references"), (count({"dataset"}), "dataset entries"),
              (count({"tool"}), "tools & portals"), (count({"competition"}), "competitions")]
     chips = "".join(f'<li><b>{v}</b><span>{html.escape(l)}</span></li>' for v, l in stats)
@@ -430,22 +434,23 @@ def home_body(pages, entries):
             f'<button class="btn" id="hero-search" type="button">Search <kbd>/</kbd></button></div>'
             f'<ul class="stats">{chips}</ul></div></section>')
     area_cards = ""
-    for key, (name, desc, path) in AREAS.items():
-        pg = pages[path]
-        n = len([e for e in entries if e["area"] == key and e["type"] == "paper"])
-        d = len([e for e in entries if e["area"] == key and e["type"] == "dataset"])
-        secs = [s for s in pg.sections if s[2] > 0][:5]
-        links = "".join(f'<a href="{pg.url}#{s[0]}">{html.escape(s[1])}</a>' for s in secs)
-        area_cards += (f'<article class="area" data-area="{key}"><h3><a href="{pg.url}">{html.escape(name)}</a></h3>'
-                       f'<p>{html.escape(desc)}</p><p class="area-meta"><b>{n}</b> papers · <b>{d}</b> datasets</p>'
+    for key, (name, desc, paths) in AREAS.items():
+        pgs = [pages[p] for p in paths]
+        n = len([e for e in all_entries if e["area"] == key and e["type"] == "paper"])
+        d = len([e for e in all_entries if e["area"] == key and e["type"] == "dataset"])
+        secs = [(q, s_) for q in pgs for s_ in q.sections if s_[2] > 0][:5]
+        links = "".join(f'<a href="{q.url}#{s_[0]}">{html.escape(s_[1])}</a>' for q, s_ in secs)
+        area_cards += (f'<article class="area" data-area="{key}"><h3><a href="{pgs[0].url}">{html.escape(name)}</a></h3>'
+                       f'<p>{html.escape(desc)}</p><p class="area-meta"><b>{n}</b> papers' + (f' · <b>{d}</b> datasets' if d else "") + '</p>'
                        f'<div class="area-links">{links}</div>'
                        f'<a class="area-go" href="explore.html?area={key}">Browse all {html.escape(AREA_SHORT[key])} →</a></article>')
     tiles = ""
-    for key, (name, _, path) in AREAS.items():
-        pg = pages[path]
-        t = "".join(f'<a class="tile" data-area="{key}" href="{pg.url}#{s[0]}"><span class="tile-n">{s[2]}</span>'
-                    f'<span class="tile-t">{html.escape(s[1])}</span></a>' for s in pg.sections if s[2] > 0 and s[1].lower() not in SKIP_TILES)
-        # also include sections of the other AI pages (flat pages without H2) as one tile each
+    for key, (name, _, paths) in AREAS.items():
+        t = ""
+        for p in paths:
+            pg = pages[p]
+            t += "".join(f'<a class="tile" data-area="{key}" href="{pg.url}#{s_[0]}"><span class="tile-n">{s_[2]}</span>'
+                         f'<span class="tile-t">{html.escape(s_[1])}</span></a>' for s_ in pg.sections if s_[2] > 0 and s_[1].lower() not in SKIP_TILES)
         if key == "ai":
             for p in ("docs/papers/vlas-for-driving.md", "docs/papers/efficient-inference.md"):
                 q = pages[p]; n = len(q.entries)
@@ -551,11 +556,18 @@ def main():
     if errors:
         print("\n".join(sorted(set(errors)))); sys.exit(1)
 
-    entries = [e for pg in pages.values() for e in pg.entries]
+    all_entries = [e for pg in pages.values() for e in pg.entries]          # per-page counts (home stats)
+    entries, seen = [], set()                                               # one card per paper in Explore and search
+    for e in all_entries:
+        key = e["primary"][1] if e["primary"] and e["primary"][1].startswith("http") else None
+        if key and key in seen:
+            continue
+        if key: seen.add(key)
+        entries.append(e)
     for pg in pages.values():
         home = pg.path == "README.md"
         if home:
-            body = home_body(pages, entries); toc = []
+            body = home_body(pages, entries, all_entries); toc = []
         else:
             head = re.match(r"^\s*(<h1[^>]*>.*?</h1>)", pg.html, re.S)
             h1 = head.group(1) if head else ""

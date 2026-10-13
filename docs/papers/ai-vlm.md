@@ -44,6 +44,11 @@ Cross-cutting page for machine learning applied to both planetary robotics and s
 - Large Language Models as Autonomous Spacecraft Operators in Kerbal Space Program: [Link](https://arxiv.org/abs/2505.19896v1)
 - ASTREA: agentic spacecraft operations with an LLM plus RL controller on flight-heritage hardware aboard the ISS: [Link](https://arxiv.org/pdf/2509.13380v2)
 - Space AI: Leveraging Artificial Intelligence for Space to Improve Life on Earth: [Link](https://arxiv.org/pdf/2512.22399)
+- OrbitTAMP: Grounding Language Models for Task and Motion Planning in Spacecraft Rendezvous: [Link](https://arxiv.org/abs/2610.01093)
+- HELIOS: An LLM-Driven Autonomous Indirect Trajectory Optimization Agent: [Link](https://arxiv.org/abs/2607.24051)
+- Semantic Constraint Synthesis for Adaptive Trajectory Optimization via Large Language Models: [Link](https://arxiv.org/abs/2606.04123)
+- Agentic AutoResearch for Space Autonomy: An Auditable, LLM-Driven Research Agent for Aerospace Control Problems: [Link](https://arxiv.org/abs/2606.20394)
+- Cognitively Layered Data Synthesis for Domain Adaptation of LLMs to Space Situational Awareness: [Link](https://arxiv.org/abs/2603.09231)
 
 ## Vision-language-action and embodied models (general, relevant to space robots)
 - Large VLM-based Vision-Language-Action Models for Robotic Manipulation: A Survey: [Link](https://arxiv.org/abs/2508.13073)
