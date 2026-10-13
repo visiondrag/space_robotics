@@ -149,11 +149,22 @@ def year_of(url, text):
     m = re.findall(r"(?<![\w.])((?:19[89]|20[0-3])\d)(?![\w.])", text)
     return int(m[-1]) if m else 0
 
+def year_from(venue, url, text):
+    """Venue year first (published year), then arXiv id, then a year in the title (ignoring 'Mars 2020')."""
+    m = re.search(r"(?<!\d)((?:19|20)\d{2})(?!\d)", venue)
+    if m:
+        return int(m.group(1))
+    return year_of(url, re.sub(r"Mars 2020", "", text))
+
 LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)\s]+)\)")
 
 def parse_bullet(line):
     """'- Title (note): [Link](url) - [File](path)' -> dict(title, desc, links)."""
     body = re.sub(r"^\s*(?:[-*]|\d+\.)\s+", "", line.rstrip())
+    venue = ""
+    mv = re.search(r"\s+·\s+\*([^*]+)\*\s*$", body)       # trailing "· *Venue Year*"
+    if mv:
+        venue, body = mv.group(1).strip(), body[: mv.start()]
     links = [(m.group(1).strip(), m.group(2)) for m in LINK_RE.finditer(body)]
     text = LINK_RE.sub("", body)
     text = re.sub(r"<(https?://[^>]+)>", "", text)
@@ -175,7 +186,7 @@ def parse_bullet(line):
         desc = f"{m.group(2)} ({m.group(1)})"
     desc = re.sub(r"\s+[Ss]ee\s*\.?$", "", desc)               # dangling "See" left by a removed link
     desc = (desc[:1].upper() + desc[1:]) if desc else desc
-    return {"title": title, "desc": desc, "links": links}
+    return {"title": title, "desc": desc, "links": links, "venue": venue}
 
 def parse_row(line, header):
     cells = [c.strip() for c in line.strip().strip("|").split("|")]
@@ -267,10 +278,10 @@ class Page:
         loc = [(l, u) for l, u in p["links"] if not u.startswith("http")]
         primary = next(((l, u) for l, u in ext if l.lower() in ("link", "paper")), ext[0] if ext else (loc[0] if loc else None))
         text = p["title"] + " " + p["desc"]
-        e = {"title": p["title"], "desc": p["desc"], "page": self, "section": section, "sid": sid,
+        e = {"title": p["title"], "desc": p["desc"], "venue": p.get("venue", ""), "page": self, "section": section, "sid": sid,
              "links": p["links"], "primary": primary, "type": self.type,
              "area": self.area_for_section(section), "src": source_of(primary[1]) if primary and primary[1].startswith("http") else "",
-             "year": year_of(primary[1] if primary else "", text),
+             "year": year_from(p.get("venue", ""), primary[1] if primary else "", text),
              "arxiv": bool(primary and "arxiv.org" in primary[1]), "pdf": any(not u.startswith("http") and u.endswith(".pdf") for _, u in p["links"])}
         self.entries.append(e)
         for s in self.sections:
@@ -287,7 +298,8 @@ def card_html(e):
     chips = []
     if e["src"]: chips.append(f'<span class="chip src">{html.escape(e["src"])}</span>')
     if e["year"]: chips.append(f'<span class="chip">{e["year"]}</span>')
-    if e["arxiv"]: chips.append('<span class="chip pre">preprint</span>')
+    if e["venue"]: chips.append(f'<span class="chip venue">{html.escape(e["venue"])}</span>')
+    elif e["arxiv"]: chips.append('<span class="chip pre">preprint</span>')
     if e["pdf"]: chips.append('<span class="chip pdf">PDF in repo</span>')
     pl = e["primary"]
     title = html.escape(e["title"])
@@ -539,7 +551,8 @@ def entry_json(e, pages, lib_exists):
     pl = e["primary"]
     return {"t": e["title"][:240], "d": e["desc"][:240], "p": e["page"].label, "s": e["section"],
             "h": e["page"].url + ("#" + e["sid"] if e["sid"] else ""), "u": url(pl[1]) if pl else "",
-            "a": e["area"], "k": e["type"], "src": e["src"], "y": e["year"], "pdf": 1 if e["pdf"] else 0}
+            "a": e["area"], "k": e["type"], "src": e["src"], "y": e["year"], "pdf": 1 if e["pdf"] else 0,
+            "v": e["venue"], "c": next((u for l, u in e["links"] if "github.com" in u), "")}
 
 def main():
     if OUT.exists(): shutil.rmtree(OUT)
@@ -558,7 +571,8 @@ def main():
 
     all_entries = [e for pg in pages.values() for e in pg.entries]          # per-page counts (home stats)
     entries, seen = [], set()                                               # one card per paper in Explore and search
-    for e in all_entries:
+    ranked = sorted(all_entries, key=lambda e: (e["type"] != "paper", not e["venue"], not any("github.com" in u for _, u in e["links"])))
+    for e in ranked:
         key = e["primary"][1] if e["primary"] and e["primary"][1].startswith("http") else None
         if key and key in seen:
             continue

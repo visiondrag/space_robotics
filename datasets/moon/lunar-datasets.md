@@ -1,9 +1,9 @@
 # Lunar datasets
 
-- **LuSNAR**: multi-task lunar benchmark built in Unreal Engine (9 scenes): stereo pairs, panoramic semantic labels, dense depth, LiDAR, rover pose. Usable for stereo, VO, visual and LiDAR SLAM, terrain modelling. [Paper](https://arxiv.org/abs/2407.06512) · local copy: [library/papers/LuSNAR_2024.pdf](../../library/papers/LuSNAR_2024.pdf)
-- **POLAR-Sim**: extends NASA's POLAR dataset (about 2,600 HDR stereo pairs, 13 terrain scenarios) with digital twins to render synthetic images under varying sun and exposure. [Paper](https://arxiv.org/pdf/2309.12397)
-- **LuMon**: benchmark for lunar monocular depth estimation, with Chang'e-3 stereo ground truth and the CHERI dark analog dataset. [Paper](https://arxiv.org/html/2604.09352)
-- **MoonAnything**: large-scale lunar supervised vision benchmark. [Paper](https://arxiv.org/pdf/2604.00682)
+- **LuSNAR**: multi-task lunar benchmark built in Unreal Engine (9 scenes): stereo pairs, panoramic semantic labels, dense depth, LiDAR, rover pose. Usable for stereo, VO, visual and LiDAR SLAM, terrain modelling. [Paper](https://arxiv.org/abs/2407.06512) · local copy: [library/papers/LuSNAR_2024.pdf](../../library/papers/LuSNAR_2024.pdf) - [Code](https://github.com/zqyu9/LuSNAR-dataset) · *IEEE TGRS*
+- **POLAR-Sim**: extends NASA's POLAR dataset (about 2,600 HDR stereo pairs, 13 terrain scenarios) with digital twins to render synthetic images under varying sun and exposure. [Paper](https://arxiv.org/pdf/2309.12397) - [Code](https://github.com/uwsbel/POLAR-Sim)
+- **LuMon**: benchmark for lunar monocular depth estimation, with Chang'e-3 stereo ground truth and the CHERI dark analog dataset. [Paper](https://arxiv.org/html/2604.09352) · *CVPR 2026 Workshops (AI4Space)*
+- **MoonAnything**: large-scale lunar supervised vision benchmark. [Paper](https://arxiv.org/pdf/2604.00682) - [Code](https://github.com/clementinegrethen/MoonAnything)
 - **OmniLRS** (simulator, generates synthetic data): see [docs/tools](../../docs/tools/README.md).
 - **SPICE-HL3** (Scientific Data, 2026): 88 sequences, 1.3M images from a stereo RGB-inertial sensor, a monochrome camera and a SPAD single-photon camera, recorded at the SnT LunaLab. [Paper](https://www.nature.com/articles/s41597-026-06668-8) · [arXiv](https://arxiv.org/abs/2506.22956) · [Data (Zenodo)](https://zenodo.org/records/13970078) · [Code](https://github.com/spaceuma/spice-hl3)
 - **MoonPlanBench**: rover path planning benchmark, see [orbital-and-benchmarks](../mars/orbital-and-benchmarks.md).

@@ -143,7 +143,7 @@
       if (skip !== "type" && st.type && e.k !== st.type) return false;
       if (skip !== "src" && st.src && e.src !== st.src) return false;
       if (st.q) {
-        var hay = (e.t + " " + e.d + " " + e.s + " " + e.p + " " + e.src).toLowerCase();
+        var hay = (e.t + " " + e.d + " " + e.s + " " + e.p + " " + e.src + " " + (e.v || "")).toLowerCase();
         var terms = st.q.toLowerCase().split(/\s+/).filter(Boolean);
         for (var i = 0; i < terms.length; i++) if (hay.indexOf(terms[i]) < 0) return false;
       }
@@ -173,11 +173,12 @@
       cnt.textContent = res.length + " of " + all.length + " resources";
       list.innerHTML = res.slice(0, st.n).map(function (e) {
         var u = fix(e.u) || (prefix + e.h), ext = /^https?:/.test(u);
-        var c = (e.src ? '<span class="chip src">' + esc(e.src) + "</span>" : "") + (e.y ? '<span class="chip">' + e.y + "</span>" : "") +
+        var c = (e.src ? '<span class="chip src">' + esc(e.src) + "</span>" : "") + (e.v ? '<span class="chip venue">' + esc(e.v) + "</span>" : (e.src === "arXiv" ? '<span class="chip pre">preprint</span>' : "")) + (e.y ? '<span class="chip">' + e.y + "</span>" : "") +
           '<span class="chip">' + esc(TYPES[e.k] ? TYPES[e.k].replace(/s$/, "") : e.k) + "</span>" + (e.pdf ? '<span class="chip pdf">PDF in repo</span>' : "");
+        var code = e.c ? '<div class="card-actions"><a class="pill" href="' + esc(e.c) + '" target="_blank" rel="noopener">Code</a></div>' : "";
         return '<article class="card" data-area="' + e.a + '"><div class="card-top">' + c + '</div><h3 class="card-title"><a href="' + esc(u) + '"' +
           (ext ? ' target="_blank" rel="noopener"' : "") + ">" + esc(e.t) + (ext ? '<span class="ext" aria-hidden="true"></span>' : "") + "</a></h3>" +
-          (e.d ? '<p class="card-desc">' + esc(e.d) + "</p>" : "") + '<div class="card-meta"><a href="' + esc(prefix + e.h) + '">' + esc(e.p) + " › " + esc(e.s) + "</a></div></article>";
+          (e.d ? '<p class="card-desc">' + esc(e.d) + "</p>" : "") + code + '<div class="card-meta"><a href="' + esc(prefix + e.h) + '">' + esc(e.p) + " › " + esc(e.s) + "</a></div></article>";
       }).join("") || '<p class="muted">No resources match these filters.</p>';
       more.hidden = res.length <= st.n;
       var p = new URLSearchParams(); ["q", "area", "type", "src"].forEach(function (k) { if (st[k]) p.set(k, st[k]); }); if (st.sort !== "rel") p.set("sort", st.sort);

@@ -232,3 +232,5 @@ body.home .toc-col{display:none}
 .prose .card-title{margin:0;font-size:15.5px;line-height:1.4}
 .prose .card{margin:0}
 .prose .cards{margin:14px 0 6px}
+
+.chip.venue{color:var(--c-general);border-color:color-mix(in srgb,var(--c-general) 50%,var(--line));background:color-mix(in srgb,var(--c-general) 10%,var(--bg2))}
