@@ -49,6 +49,9 @@ This repository also builds a searchable website with GitHub Pages; see the [web
 ## Contributing
 Contributions are welcome: see [CONTRIBUTING.md](CONTRIBUTING.md). Link checking runs weekly through GitHub Actions.
 
+## Thanks
+Thanks to [Victor Rodriguez-Fernandez](https://www.linkedin.com/in/vrodriguezf90/) for his weekly arXiv picks on AI for space, which are a great source of papers for this list.
+
 ## License
 Curation and descriptions: [CC BY 4.0](LICENSE). Linked papers and PDFs in `library/` keep their own terms.
 

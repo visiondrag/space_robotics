@@ -13,8 +13,6 @@ Research groups appearing in this repository
 - Astrobotic (lunar landers): [Payload User's Guide](https://www.astrobotic.com/wp-content/uploads/2022/01/PUGLanders_011222.pdf)
 - Stanford Space Rendezvous Laboratory (SLAB): [SPEED/SPEED+ datasets and TRON testbed](https://slab.stanford.edu/projects/datasets)
 - SnT, University of Luxembourg, CVI² group: [SPARK datasets](https://cvi2.uni.lu/spark2024/)
-- Victor Rodriguez-Fernandez, Universidad Politécnica de Madrid (AI for space operations, time series): [weekly arXiv picks on LinkedIn](https://www.linkedin.com/in/vrodriguezf90/) · [AIDA group page](https://aida.etsisi.upm.es/member/victor-rodriguez-fernandez/)
-- MIT ARCLab: [KSPDG challenge code](https://github.com/ARCLab-MIT/kspdg)
 - ESA Advanced Concepts Team: [Kelvins competitions](https://kelvins.esa.int/satellite-pose-estimation-challenge/challenge/)
 - CU Boulder AVS Lab: [Basilisk](https://hanspeterschaub.info/basilisk/)
 

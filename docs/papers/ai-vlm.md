@@ -1,8 +1,8 @@
 # Papers: AI, foundation models, VLMs and LLM agents for space
 
-Cross-cutting page for machine learning applied to both planetary robotics and satellites. Core planetary VLM entries (Space-LLaVA, Mars-Bench, MarsRetrieval, Mars foundation model) are in the [planetary papers page](README.md#foundation-models-and-vlms-for-planetary-science). Many entries are recent preprints.
+Thanks to [Victor Rodriguez-Fernandez](https://www.linkedin.com/in/vrodriguezf90/) for his weekly arXiv picks on AI for space, which are a great source of papers for this list.
 
-Looking for a regularly updated feed? See the [weekly picks on AI for space](weekly-picks.md).
+Cross-cutting page for machine learning applied to both planetary robotics and satellites. Core planetary VLM entries (Space-LLaVA, Mars-Bench, MarsRetrieval, Mars foundation model) are in the [planetary papers page](README.md#foundation-models-and-vlms-for-planetary-science). Many entries are recent preprints.
 
 ## Foundation models for planetary imagery
 - MOMO: Mars Orbital Model Foundation Model for Mars Orbital Applications (includes a HiRISE boulder segmentation dataset): [Link](https://arxiv.org/pdf/2604.02719)
@@ -44,11 +44,6 @@ Looking for a regularly updated feed? See the [weekly picks on AI for space](wee
 - Large Language Models as Autonomous Spacecraft Operators in Kerbal Space Program: [Link](https://arxiv.org/abs/2505.19896v1)
 - ASTREA: agentic spacecraft operations with an LLM plus RL controller on flight-heritage hardware aboard the ISS: [Link](https://arxiv.org/pdf/2509.13380v2)
 - Space AI: Leveraging Artificial Intelligence for Space to Improve Life on Earth: [Link](https://arxiv.org/pdf/2512.22399)
-- Fine-tuning LLMs for Autonomous Spacecraft Control: A Case Study Using Kerbal Space Program: [Link](https://arxiv.org/abs/2408.08676)
-- Visual Language Models as Operator Agents in the Space Domain (AIAA SciTech 2025): [Link](https://arxiv.org/abs/2501.07802)
-- Language-Conditioned Safe Trajectory Generation for Spacecraft Rendezvous: [Link](https://arxiv.org/pdf/2512.09111)
-- AI-Augmented Model Predictive Control for Safe and Adaptive Rendezvous and Proximity Operations: [Link](https://arxiv.org/pdf/2607.16630)
-- SpaceGym: Discrete and Differential Games in Non-Cooperative Space Operations (KSPDG environment): [Link](https://ieeexplore.ieee.org/document/10115968/)
 
 ## Vision-language-action and embodied models (general, relevant to space robots)
 - Large VLM-based Vision-Language-Action Models for Robotic Manipulation: A Survey: [Link](https://arxiv.org/abs/2508.13073)

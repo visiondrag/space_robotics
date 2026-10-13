@@ -2,6 +2,8 @@
 
 Curated literature on rovers, lunar and Mars perception, legged and cave robots, asteroids, ISRU, teleoperation and flight software. Looking for something else? See [satellites, spacecraft control and space computer vision](satellites.md) or [AI, foundation models, VLMs and LLM agents](ai-vlm.md).
 
+Thanks to [Victor Rodriguez-Fernandez](https://www.linkedin.com/in/vrodriguezf90/) for his weekly arXiv picks on AI for space, which are a great source of papers for this list.
+
 **New to the field?** Start with the Space ROS flight software paper and the Perseverance autonomy article for the big picture, then terrain traversability, then the survey of on-orbit servicing manipulators.
 
 Entries with a **PDF in repo** badge have a local copy in the [library](../../library/). IEEE papers are link-only. Many recent entries are preprints and have not been peer reviewed. To add an entry, see [CONTRIBUTING](../../CONTRIBUTING.md).
